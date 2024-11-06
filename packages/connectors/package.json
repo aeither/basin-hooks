@@ -45,10 +45,7 @@
     "@walletconnect/ethereum-provider": "2.17.0",
     "cbw-sdk": "npm:@coinbase/wallet-sdk@3.9.3"
   },
-  "contributors": [
-    "awkweb.eth <t@wevm.dev>",
-    "jxom.eth <j@wevm.dev>"
-  ],
+  "contributors": ["awkweb.eth <t@wevm.dev>", "jxom.eth <j@wevm.dev>"],
   "funding": "https://github.com/sponsors/wevm",
   "keywords": [
     "react",

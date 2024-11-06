@@ -30,18 +30,7 @@
     "picocolors": "^1.0.0",
     "prompts": "^2.4.2"
   },
-  "contributors": [
-    "awkweb.eth <t@wevm.dev>",
-    "jxom.eth <j@wevm.dev>"
-  ],
+  "contributors": ["awkweb.eth <t@wevm.dev>", "jxom.eth <j@wevm.dev>"],
   "funding": "https://github.com/sponsors/wevm",
-  "keywords": [
-    "wagmi",
-    "eth",
-    "ethereum",
-    "dapps",
-    "wallet",
-    "web3",
-    "cli"
-  ]
+  "keywords": ["wagmi", "eth", "ethereum", "dapps", "wallet", "web3", "cli"]
 }

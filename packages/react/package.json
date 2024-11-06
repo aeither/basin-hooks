@@ -63,24 +63,12 @@
   },
   "typesVersions": {
     "*": {
-      "actions": [
-        "./dist/types/exports/actions.d.ts"
-      ],
-      "chains": [
-        "./dist/types/exports/chains.d.ts"
-      ],
-      "codegen": [
-        "./dist/types/exports/codegen.d.ts"
-      ],
-      "connectors": [
-        "./dist/types/exports/connectors.d.ts"
-      ],
-      "experimental": [
-        "./dist/types/exports/experimental.d.ts"
-      ],
-      "query": [
-        "./dist/types/exports/query.d.ts"
-      ]
+      "actions": ["./dist/types/exports/actions.d.ts"],
+      "chains": ["./dist/types/exports/chains.d.ts"],
+      "codegen": ["./dist/types/exports/codegen.d.ts"],
+      "connectors": ["./dist/types/exports/connectors.d.ts"],
+      "experimental": ["./dist/types/exports/experimental.d.ts"],
+      "query": ["./dist/types/exports/query.d.ts"]
     }
   },
   "peerDependencies": {
@@ -100,10 +88,7 @@
     "basin-hooks": "workspace:*",
     "use-sync-external-store": "1.2.0"
   },
-  "contributors": [
-    "awkweb.eth <t@wevm.dev>",
-    "jxom.eth <j@wevm.dev>"
-  ],
+  "contributors": ["awkweb.eth <t@wevm.dev>", "jxom.eth <j@wevm.dev>"],
   "funding": "https://github.com/sponsors/wevm",
   "keywords": [
     "wagmi",
