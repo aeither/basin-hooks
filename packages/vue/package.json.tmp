@@ -8,6 +8,13 @@
     "url": "https://github.com/wevm/wagmi.git",
     "directory": "packages/vue"
   },
+  "scripts": {
+    "build": "pnpm run clean && pnpm run build:esm+types",
+    "build:esm+types": "tsc --project tsconfig.build.json --outDir ./dist/esm --declaration --declarationMap --declarationDir ./dist/types",
+    "check:types": "tsc --noEmit",
+    "clean": "rm -rf dist tsconfig.tsbuildinfo actions chains connectors nuxt query",
+    "test:build": "publint --strict && attw --pack --ignore-rules cjs-resolves-to-esm"
+  },
   "files": [
     "dist/**",
     "!dist/**/*.tsbuildinfo",
@@ -93,6 +100,14 @@
   "dependencies": {
     "@wagmi/connectors": "workspace:*",
     "basin-hooks": "workspace:*"
+  },
+  "devDependencies": {
+    "@nuxt/schema": "^3.11.2",
+    "@tanstack/vue-query": ">=5.45.0",
+    "@vue/test-utils": "^2.4.6",
+    "nuxt": "^3.11.2",
+    "vue": ">=3.4.21",
+    "vue-tsc": "^2.0.6"
   },
   "contributors": [
     "awkweb.eth <t@wevm.dev>",

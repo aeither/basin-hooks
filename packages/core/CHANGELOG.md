@@ -1,5 +1,13 @@
 # basin-hooks
 
+## 3.0.1
+
+### Patch Changes
+
+- [`be702bdf2101cd115c203078b3a4e0f98730acfb`](https://github.com/wevm/wagmi/commit/be702bdf2101cd115c203078b3a4e0f98730acfb) Thanks [@aeither](https://github.com/aeither)! - patch test 2
+
+- [`b66d9c3b9998abd28e4876c1423d3cd655eaf1f7`](https://github.com/wevm/wagmi/commit/b66d9c3b9998abd28e4876c1423d3cd655eaf1f7) Thanks [@aeither](https://github.com/aeither)! - patch
+
 ## 3.0.0
 
 ### Major Changes
@@ -2435,7 +2443,7 @@
       addressOrName: "0xecb504d39723b0be0e3a9aa33d646642d1051ee1",
       contractInterface: wagmigotchiABI,
     },
-    "feed"
+    "feed",
   );
   ```
 
@@ -2462,7 +2470,7 @@
       contractInterface: wagmigotchiABI,
     },
     "getHunger",
-    { args: [0] }
+    { args: [0] },
   );
 
   watchReadContract(
@@ -2472,7 +2480,7 @@
     },
     "getHunger",
     { args: [0] },
-    (result) => {}
+    (result) => {},
   );
   ```
 
@@ -2493,7 +2501,7 @@
       functionName: "getHunger",
       args: [0],
     },
-    (result) => {}
+    (result) => {},
   );
   ```
 
@@ -2771,7 +2779,7 @@
 
   const { chains, provider, webSocketProvider } = configureChains(
     defaultChains,
-    [alchemyProvider({ alchemyId }), publicProvider()]
+    [alchemyProvider({ alchemyId }), publicProvider()],
   );
 
   const client = createClient({

@@ -8,6 +8,13 @@
     "url": "https://github.com/wevm/wagmi.git",
     "directory": "packages/connectors"
   },
+  "scripts": {
+    "build": "pnpm run clean && pnpm run build:esm+types",
+    "build:esm+types": "tsc --project tsconfig.build.json --outDir ./dist/esm --declaration --declarationMap --declarationDir ./dist/types",
+    "check:types": "tsc --noEmit",
+    "clean": "rm -rf dist tsconfig.tsbuildinfo",
+    "test:build": "publint --strict && attw --pack --ignore-rules cjs-resolves-to-esm"
+  },
   "files": [
     "dist/**",
     "!dist/**/*.tsbuildinfo",
@@ -44,6 +51,10 @@
     "@safe-global/safe-apps-sdk": "9.1.0",
     "@walletconnect/ethereum-provider": "2.17.0",
     "cbw-sdk": "npm:@coinbase/wallet-sdk@3.9.3"
+  },
+  "devDependencies": {
+    "basin-hooks": "workspace:*",
+    "msw": "^2.4.9"
   },
   "contributors": [
     "awkweb.eth <t@wevm.dev>",
