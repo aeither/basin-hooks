@@ -3,13 +3,13 @@ import type {
   ResolvedRegister,
   SimulateContractErrorType,
   SimulateContractParameters,
-} from '@wagmi/core'
-import type { ScopeKeyParameter, UnionExactPartial } from '@wagmi/core/internal'
+} from 'basin-hooks'
+import type { ScopeKeyParameter, UnionExactPartial } from 'basin-hooks/internal'
 import type {
   SimulateContractData,
   SimulateContractQueryFnData,
   SimulateContractQueryKey,
-} from '@wagmi/core/query'
+} from 'basin-hooks/query'
 import type {
   Abi,
   Address,

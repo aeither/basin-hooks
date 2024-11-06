@@ -66,6 +66,6 @@ test('behavior: already connected', async () => {
   await expect(connect(config, { connector })).rejects.toMatchInlineSnapshot(`
     [ConnectorAlreadyConnectedError: Connector already connected.
 
-    Version: @wagmi/core@x.y.z]
+    Version: basin-hooks@x.y.z]
   `)
 })

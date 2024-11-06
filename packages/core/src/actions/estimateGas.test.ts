@@ -42,6 +42,6 @@ test('behavior: no account and not connected', async () => {
   ).rejects.toThrowErrorMatchingInlineSnapshot(`
     [ConnectorNotConnectedError: Connector not connected.
 
-    Version: @wagmi/core@x.y.z]
+    Version: basin-hooks@x.y.z]
   `)
 })

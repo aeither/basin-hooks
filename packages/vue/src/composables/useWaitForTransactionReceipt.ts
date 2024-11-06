@@ -2,15 +2,15 @@ import type {
   Config,
   ResolvedRegister,
   WaitForTransactionReceiptErrorType,
-} from '@wagmi/core'
-import type { Compute } from '@wagmi/core/internal'
+} from 'basin-hooks'
+import type { Compute } from 'basin-hooks/internal'
 import {
   type WaitForTransactionReceiptData,
   type WaitForTransactionReceiptOptions,
   type WaitForTransactionReceiptQueryFnData,
   type WaitForTransactionReceiptQueryKey,
   waitForTransactionReceiptQueryOptions,
-} from '@wagmi/core/query'
+} from 'basin-hooks/query'
 import { computed } from 'vue'
 
 import type { ConfigParameter, QueryParameter } from '../types/properties.js'

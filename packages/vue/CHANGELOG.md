@@ -6,7 +6,7 @@
 
 - Updated dependencies [[`b6861a4c378dab78d8751ae0ac2aa425f3c24b8f`](https://github.com/wevm/wagmi/commit/b6861a4c378dab78d8751ae0ac2aa425f3c24b8f), [`d0d0963bb5904a15cf0355862d62dd141ce0c31c`](https://github.com/wevm/wagmi/commit/d0d0963bb5904a15cf0355862d62dd141ce0c31c), [`ecac0ba36243d94c9199d0bd21937104c835d9a0`](https://github.com/wevm/wagmi/commit/ecac0ba36243d94c9199d0bd21937104c835d9a0)]:
   - @wagmi/connectors@5.3.4
-  - @wagmi/core@2.14.2
+  - basin-hooks@2.14.2
 
 ## 0.0.56
 
@@ -27,7 +27,7 @@
 ### Patch Changes
 
 - Updated dependencies [[`052e72e1f8c1c14fcbdce04a9f8fa7ec28d83702`](https://github.com/wevm/wagmi/commit/052e72e1f8c1c14fcbdce04a9f8fa7ec28d83702), [`b250fc21ee577b2a75c5a34ff684f62fb4ad771a`](https://github.com/wevm/wagmi/commit/b250fc21ee577b2a75c5a34ff684f62fb4ad771a)]:
-  - @wagmi/core@2.14.1
+  - basin-hooks@2.14.1
   - @wagmi/connectors@5.3.1
 
 ## 0.0.53
@@ -36,14 +36,14 @@
 
 - Updated dependencies [[`f43e074f473820b208a6295d7c97f847332f1a1d`](https://github.com/wevm/wagmi/commit/f43e074f473820b208a6295d7c97f847332f1a1d)]:
   - @wagmi/connectors@6.0.0
-  - @wagmi/core@2.14.0
+  - basin-hooks@2.14.0
 
 ## 0.0.52
 
 ### Patch Changes
 
 - Updated dependencies [[`c05caabc20c3ced9682cfc7ba1f3f7dcfece0703`](https://github.com/wevm/wagmi/commit/c05caabc20c3ced9682cfc7ba1f3f7dcfece0703), [`5ae49af590ff168426c9c283d54c34ae5148fcd9`](https://github.com/wevm/wagmi/commit/5ae49af590ff168426c9c283d54c34ae5148fcd9), [`f3182b22e6e454d9bd74f1b940ef34431fd9555d`](https://github.com/wevm/wagmi/commit/f3182b22e6e454d9bd74f1b940ef34431fd9555d)]:
-  - @wagmi/core@2.13.9
+  - basin-hooks@2.13.9
   - @wagmi/connectors@5.2.2
 
 ## 0.0.51
@@ -73,14 +73,14 @@
 
 - Updated dependencies [[`56f2482508f2ba71bd6b0295c70c6abca7101e57`](https://github.com/wevm/wagmi/commit/56f2482508f2ba71bd6b0295c70c6abca7101e57)]:
   - @wagmi/connectors@5.1.14
-  - @wagmi/core@2.13.8
+  - basin-hooks@2.13.8
 
 ## 0.0.47
 
 ### Patch Changes
 
 - Updated dependencies [[`be75c2d4ef636d7362420ab0a106bfdf63f5d1e6`](https://github.com/wevm/wagmi/commit/be75c2d4ef636d7362420ab0a106bfdf63f5d1e6)]:
-  - @wagmi/core@2.13.7
+  - basin-hooks@2.13.7
   - @wagmi/connectors@5.1.13
 
 ## 0.0.46
@@ -88,7 +88,7 @@
 ### Patch Changes
 
 - Updated dependencies [[`edcbf5d6fbe92f639bead800502edda9e0aa39f1`](https://github.com/wevm/wagmi/commit/edcbf5d6fbe92f639bead800502edda9e0aa39f1)]:
-  - @wagmi/core@2.13.6
+  - basin-hooks@2.13.6
   - @wagmi/connectors@5.1.12
 
 ## 0.0.45
@@ -114,7 +114,7 @@
 
 - Updated dependencies [[`81de006e66121a18c61945c1f9b8426c83a5713c`](https://github.com/wevm/wagmi/commit/81de006e66121a18c61945c1f9b8426c83a5713c), [`f47ce8f6d263e49fdff90b8edb3190142d2657bb`](https://github.com/wevm/wagmi/commit/f47ce8f6d263e49fdff90b8edb3190142d2657bb)]:
   - @wagmi/connectors@5.1.10
-  - @wagmi/core@2.13.5
+  - basin-hooks@2.13.5
 
 ## 0.0.42
 
@@ -155,7 +155,7 @@
 ### Patch Changes
 
 - Updated dependencies [[`b4c8971788c70b09479946ecfa998cff2f1b3953`](https://github.com/wevm/wagmi/commit/b4c8971788c70b09479946ecfa998cff2f1b3953)]:
-  - @wagmi/core@2.13.4
+  - basin-hooks@2.13.4
   - @wagmi/connectors@5.1.5
 
 ## 0.0.36
@@ -163,7 +163,7 @@
 ### Patch Changes
 
 - Updated dependencies [[`871dbdbfe59ac8ad01d1ec6150ea7b091b7b7de4`](https://github.com/wevm/wagmi/commit/871dbdbfe59ac8ad01d1ec6150ea7b091b7b7de4)]:
-  - @wagmi/core@2.13.3
+  - basin-hooks@2.13.3
   - @wagmi/connectors@5.1.4
 
 ## 0.0.35
@@ -171,7 +171,7 @@
 ### Patch Changes
 
 - Updated dependencies [[`1b9b523fa9b9dfe839aecdf4b40caa9547d7e594`](https://github.com/wevm/wagmi/commit/1b9b523fa9b9dfe839aecdf4b40caa9547d7e594)]:
-  - @wagmi/core@2.13.2
+  - basin-hooks@2.13.2
   - @wagmi/connectors@5.1.3
 
 ## 0.0.34
@@ -186,7 +186,7 @@
 ### Patch Changes
 
 - Updated dependencies [[`07c1227f306d0efb9421d4bb77a774f92f5fcf45`](https://github.com/wevm/wagmi/commit/07c1227f306d0efb9421d4bb77a774f92f5fcf45)]:
-  - @wagmi/core@2.13.1
+  - basin-hooks@2.13.1
   - @wagmi/connectors@5.1.1
 
 ## 0.0.32
@@ -197,7 +197,7 @@
 
 - Updated dependencies [[`a73a7737b756886b388f120ae423e72cca53e8a0`](https://github.com/wevm/wagmi/commit/a73a7737b756886b388f120ae423e72cca53e8a0)]:
   - @wagmi/connectors@6.0.0
-  - @wagmi/core@2.13.0
+  - basin-hooks@2.13.0
 
 ## 0.0.31
 
@@ -210,7 +210,7 @@
 ### Patch Changes
 
 - Updated dependencies [[`5bc8c8877810b2eec24a829df87dce40a51e6f20`](https://github.com/wevm/wagmi/commit/5bc8c8877810b2eec24a829df87dce40a51e6f20), [`8d81df5cc884d0a210dedd3c1ea0e2e9e52b83c5`](https://github.com/wevm/wagmi/commit/8d81df5cc884d0a210dedd3c1ea0e2e9e52b83c5)]:
-  - @wagmi/core@2.12.2
+  - basin-hooks@2.12.2
   - @wagmi/connectors@5.0.26
 
 ## 0.0.29
@@ -221,7 +221,7 @@
 
 - Updated dependencies [[`cc996e08e930c9e88cf753a1e874652059e81a3b`](https://github.com/wevm/wagmi/commit/cc996e08e930c9e88cf753a1e874652059e81a3b)]:
   - @wagmi/connectors@5.0.25
-  - @wagmi/core@2.12.1
+  - basin-hooks@2.12.1
 
 ## 0.0.28
 
@@ -230,7 +230,7 @@
 - [`b6cb1477e3e87984917b172a909f1968e0d77dc9`](https://github.com/wevm/wagmi/commit/b6cb1477e3e87984917b172a909f1968e0d77dc9) Thanks [@tmm](https://github.com/tmm)! - Added `useBytecode` composable.
 
 - Updated dependencies [[`5581a810ef70308e99c6f8b630cd4bca59f64afc`](https://github.com/wevm/wagmi/commit/5581a810ef70308e99c6f8b630cd4bca59f64afc)]:
-  - @wagmi/core@2.12.0
+  - basin-hooks@2.12.0
   - @wagmi/connectors@6.0.0
 
 ## 0.0.27
@@ -240,7 +240,7 @@
 - [`d3814ab4b88f9f0e052b53bc3d458df87b43f01d`](https://github.com/wevm/wagmi/commit/d3814ab4b88f9f0e052b53bc3d458df87b43f01d) Thanks [@jxom](https://github.com/jxom)! - Updated `mipd` dependency.
 
 - Updated dependencies [[`b08013eaa9ce97c02f8a7128ea400e3da7ef74bb`](https://github.com/wevm/wagmi/commit/b08013eaa9ce97c02f8a7128ea400e3da7ef74bb), [`d3814ab4b88f9f0e052b53bc3d458df87b43f01d`](https://github.com/wevm/wagmi/commit/d3814ab4b88f9f0e052b53bc3d458df87b43f01d)]:
-  - @wagmi/core@2.11.8
+  - basin-hooks@2.11.8
   - @wagmi/connectors@5.0.23
 
 ## 0.0.26
@@ -249,7 +249,7 @@
 
 - Updated dependencies [[`0bb8b562ae04ecfeb2d6b2f1b980ebae31dc127e`](https://github.com/wevm/wagmi/commit/0bb8b562ae04ecfeb2d6b2f1b980ebae31dc127e)]:
   - @wagmi/connectors@5.0.22
-  - @wagmi/core@2.11.7
+  - basin-hooks@2.11.7
 
 ## 0.0.25
 
@@ -259,7 +259,7 @@
 
 - Updated dependencies [[`ff0760b5900114bcfdf420a9fba3cc278ac95afe`](https://github.com/wevm/wagmi/commit/ff0760b5900114bcfdf420a9fba3cc278ac95afe), [`95965c1f19d480b97f2b297a077a9e607dee32ad`](https://github.com/wevm/wagmi/commit/95965c1f19d480b97f2b297a077a9e607dee32ad)]:
   - @wagmi/connectors@5.0.21
-  - @wagmi/core@2.11.6
+  - basin-hooks@2.11.6
 
 ## 0.0.24
 
@@ -287,7 +287,7 @@
 ### Patch Changes
 
 - Updated dependencies [[`04f2b846b113f3d300d82c9fa75212f1805817c5`](https://github.com/wevm/wagmi/commit/04f2b846b113f3d300d82c9fa75212f1805817c5)]:
-  - @wagmi/core@2.11.5
+  - basin-hooks@2.11.5
   - @wagmi/connectors@5.0.17
 
 ## 0.0.20
@@ -295,7 +295,7 @@
 ### Patch Changes
 
 - Updated dependencies [[`9e8345cd56186b997b5e56deaa2cfc69b30d15f6`](https://github.com/wevm/wagmi/commit/9e8345cd56186b997b5e56deaa2cfc69b30d15f6), [`02c38c28d1aa0ad7a61c33775de603ed974c5c1b`](https://github.com/wevm/wagmi/commit/02c38c28d1aa0ad7a61c33775de603ed974c5c1b)]:
-  - @wagmi/core@2.11.4
+  - basin-hooks@2.11.4
   - @wagmi/connectors@5.0.16
 
 ## 0.0.19
@@ -303,7 +303,7 @@
 ### Patch Changes
 
 - Updated dependencies [[`8974e6269bb5d7bfaa90db0246bc7d13e8bff798`](https://github.com/wevm/wagmi/commit/8974e6269bb5d7bfaa90db0246bc7d13e8bff798)]:
-  - @wagmi/core@2.11.3
+  - basin-hooks@2.11.3
   - @wagmi/connectors@5.0.15
 
 ## 0.0.18
@@ -311,7 +311,7 @@
 ### Patch Changes
 
 - Updated dependencies [[`b4d9ef79deb554ee20fed6666a474be5e7cdd522`](https://github.com/wevm/wagmi/commit/b4d9ef79deb554ee20fed6666a474be5e7cdd522)]:
-  - @wagmi/core@2.11.2
+  - basin-hooks@2.11.2
   - @wagmi/connectors@5.0.14
 
 ## 0.0.17
@@ -320,14 +320,14 @@
 
 - Updated dependencies [[`9c862d8d63e3d692a22cef2a90782b74a9103f17`](https://github.com/wevm/wagmi/commit/9c862d8d63e3d692a22cef2a90782b74a9103f17)]:
   - @wagmi/connectors@5.0.13
-  - @wagmi/core@2.11.1
+  - basin-hooks@2.11.1
 
 ## 0.0.16
 
 ### Patch Changes
 
 - Updated dependencies [[`06bb598a7f04c7b167f5b7ff6d46bd15886a6a14`](https://github.com/wevm/wagmi/commit/06bb598a7f04c7b167f5b7ff6d46bd15886a6a14), [`24a45b269bd0214a29d6f82a84ac66ef8c3f3822`](https://github.com/wevm/wagmi/commit/24a45b269bd0214a29d6f82a84ac66ef8c3f3822)]:
-  - @wagmi/core@2.11.0
+  - basin-hooks@2.11.0
   - @wagmi/connectors@6.0.0
 
 ## 0.0.15
@@ -335,7 +335,7 @@
 ### Patch Changes
 
 - Updated dependencies [[`f2a7cefab96691ebed8b8e45ffde071c47b58dbe`](https://github.com/wevm/wagmi/commit/f2a7cefab96691ebed8b8e45ffde071c47b58dbe), [`f0ea0b2a7fe193dadfeb49a4c8031ee451c638b5`](https://github.com/wevm/wagmi/commit/f0ea0b2a7fe193dadfeb49a4c8031ee451c638b5), [`e3b124ce414b8fd1b2214e2c5a28dc72158a13d1`](https://github.com/wevm/wagmi/commit/e3b124ce414b8fd1b2214e2c5a28dc72158a13d1)]:
-  - @wagmi/core@2.10.6
+  - basin-hooks@2.10.6
   - @wagmi/connectors@5.0.11
 
 ## 0.0.14
@@ -364,7 +364,7 @@
 ### Patch Changes
 
 - Updated dependencies [[`030c7c2cb380dfd67a2182f62e2aa7a6e1601898`](https://github.com/wevm/wagmi/commit/030c7c2cb380dfd67a2182f62e2aa7a6e1601898)]:
-  - @wagmi/core@2.10.5
+  - basin-hooks@2.10.5
   - @wagmi/connectors@5.0.7
 
 ## 0.0.10
@@ -372,7 +372,7 @@
 ### Patch Changes
 
 - Updated dependencies [[`51fde8a0433b4fff357c1a8d7e08b41b4c86c968`](https://github.com/wevm/wagmi/commit/51fde8a0433b4fff357c1a8d7e08b41b4c86c968)]:
-  - @wagmi/core@2.10.4
+  - basin-hooks@2.10.4
   - @wagmi/connectors@5.0.6
 
 ## 0.0.9
@@ -395,7 +395,7 @@
 
 - Updated dependencies [[`2804a8a583b1874271154898b4bae38756ef581c`](https://github.com/wevm/wagmi/commit/2804a8a583b1874271154898b4bae38756ef581c), [`2804a8a583b1874271154898b4bae38756ef581c`](https://github.com/wevm/wagmi/commit/2804a8a583b1874271154898b4bae38756ef581c)]:
   - @wagmi/connectors@5.0.3
-  - @wagmi/core@2.10.3
+  - basin-hooks@2.10.3
 
 ## 0.0.6
 
@@ -411,7 +411,7 @@
 
 - Updated dependencies [[`a5071f581dfdfb961718873643a2fc629101c72a`](https://github.com/wevm/wagmi/commit/a5071f581dfdfb961718873643a2fc629101c72a)]:
   - @wagmi/connectors@5.0.2
-  - @wagmi/core@2.10.2
+  - basin-hooks@2.10.2
 
 ## 0.0.4
 
@@ -419,7 +419,7 @@
 
 - Updated dependencies []:
   - @wagmi/connectors@5.0.1
-  - @wagmi/core@2.10.1
+  - basin-hooks@2.10.1
 
 ## 0.0.3
 
@@ -427,7 +427,7 @@
 
 - Updated dependencies [[`3117e71825f9c58a0d718f3d1686f1a191fa9cb1`](https://github.com/wevm/wagmi/commit/3117e71825f9c58a0d718f3d1686f1a191fa9cb1), [`3117e71825f9c58a0d718f3d1686f1a191fa9cb1`](https://github.com/wevm/wagmi/commit/3117e71825f9c58a0d718f3d1686f1a191fa9cb1)]:
   - @wagmi/connectors@5.0.0
-  - @wagmi/core@2.10.0
+  - basin-hooks@2.10.0
 
 ## 0.0.2
 
@@ -437,4 +437,4 @@
 
 - Updated dependencies [[`32fcb4a31dde6b0206961d8ffe9c651f8a459c67`](https://github.com/wevm/wagmi/commit/32fcb4a31dde6b0206961d8ffe9c651f8a459c67)]:
   - @wagmi/connectors@4.3.10
-  - @wagmi/core@2.9.8
+  - basin-hooks@2.9.8

@@ -1,5 +1,5 @@
-import type { SignMessageErrorType } from '@wagmi/core'
-import type { SignMessageVariables } from '@wagmi/core/query'
+import type { SignMessageErrorType } from 'basin-hooks'
+import type { SignMessageVariables } from 'basin-hooks/query'
 import { expectTypeOf, test } from 'vitest'
 
 import { useSignMessage } from './useSignMessage.js'

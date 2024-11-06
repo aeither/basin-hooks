@@ -3,19 +3,19 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 // biome-ignore lint/performance/noBarrelFile: entrypoint module
-export { configKey, type WagmiPluginOptions, WagmiPlugin } from '../plugin.js'
+export { WagmiPlugin, configKey, type WagmiPluginOptions } from '../plugin.js'
 
 ////////////////////////////////////////////////////////////////////////////////
 // Errors
 ////////////////////////////////////////////////////////////////////////////////
 
-export { type BaseErrorType, BaseError } from '../errors/base.js'
+export { BaseError, type BaseErrorType } from '../errors/base.js'
 
 export {
-  type WagmiPluginNotFoundErrorType,
+  WagmiInjectionContextError,
   WagmiPluginNotFoundError,
   type WagmiInjectionContextErrorType,
-  WagmiInjectionContextError,
+  type WagmiPluginNotFoundErrorType,
 } from '../errors/plugin.js'
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -23,253 +23,253 @@ export {
 ////////////////////////////////////////////////////////////////////////////////
 
 export {
+  useAccount,
   type UseAccountParameters,
   type UseAccountReturnType,
-  useAccount,
 } from '../composables/useAccount.js'
 
 export {
-  type UseAccountEffectParameters,
   useAccountEffect,
+  type UseAccountEffectParameters,
 } from '../composables/useAccountEffect.js'
 
 export {
+  useBalance,
   type UseBalanceParameters,
   type UseBalanceReturnType,
-  useBalance,
 } from '../composables/useBalance.js'
 
 export {
+  useBlockNumber,
   type UseBlockNumberParameters,
   type UseBlockNumberReturnType,
-  useBlockNumber,
 } from '../composables/useBlockNumber.js'
 
 export {
+  useBytecode,
   type UseBytecodeParameters,
   type UseBytecodeReturnType,
-  useBytecode,
 } from '../composables/useBytecode.js'
 
 export {
+  useChainId,
   type UseChainIdParameters,
   type UseChainIdReturnType,
-  useChainId,
 } from '../composables/useChainId.js'
 
 export {
+  useClient,
   type UseClientParameters,
   type UseClientReturnType,
-  useClient,
 } from '../composables/useClient.js'
 
 export {
+  useConnectorClient,
   type UseConnectorClientParameters,
   type UseConnectorClientReturnType,
-  useConnectorClient,
 } from '../composables/useConnectorClient.js'
 
 export {
+  useChains,
   type UseChainsParameters,
   type UseChainsReturnType,
-  useChains,
 } from '../composables/useChains.js'
 
 export {
+  useConfig,
   type UseConfigParameters,
   type UseConfigReturnType,
-  useConfig,
 } from '../composables/useConfig.js'
 
 export {
+  useConnect,
   type UseConnectParameters,
   type UseConnectReturnType,
-  useConnect,
 } from '../composables/useConnect.js'
 
 export {
+  useConnections,
   type UseConnectionsParameters,
   type UseConnectionsReturnType,
-  useConnections,
 } from '../composables/useConnections.js'
 
 export {
+  useConnectors,
   type UseConnectorsParameters,
   type UseConnectorsReturnType,
-  useConnectors,
 } from '../composables/useConnectors.js'
 
 export {
+  useDisconnect,
   type UseDisconnectParameters,
   type UseDisconnectReturnType,
-  useDisconnect,
 } from '../composables/useDisconnect.js'
 
 export {
+  useEnsAddress,
   type UseEnsAddressParameters,
   type UseEnsAddressReturnType,
-  useEnsAddress,
 } from '../composables/useEnsAddress.js'
 
 export {
+  useEnsAvatar,
   type UseEnsAvatarParameters,
   type UseEnsAvatarReturnType,
-  useEnsAvatar,
 } from '../composables/useEnsAvatar.js'
 
 export {
+  useEnsName,
   type UseEnsNameParameters,
   type UseEnsNameReturnType,
-  useEnsName,
 } from '../composables/useEnsName.js'
 
 export {
+  useEstimateGas,
   type UseEstimateGasParameters,
   type UseEstimateGasReturnType,
-  useEstimateGas,
 } from '../composables/useEstimateGas.js'
 
 export {
+  useReadContract,
   type UseReadContractParameters,
   type UseReadContractReturnType,
-  useReadContract,
 } from '../composables/useReadContract.js'
 
 export {
+  useReconnect,
   type UseReconnectParameters,
   type UseReconnectReturnType,
-  useReconnect,
 } from '../composables/useReconnect.js'
 
 export {
+  useSendTransaction,
   type UseSendTransactionParameters,
   type UseSendTransactionReturnType,
-  useSendTransaction,
 } from '../composables/useSendTransaction.js'
 
 export {
+  useSignMessage,
   type UseSignMessageParameters,
   type UseSignMessageReturnType,
-  useSignMessage,
 } from '../composables/useSignMessage.js'
 
 export {
+  useSignTypedData,
   type UseSignTypedDataParameters,
   type UseSignTypedDataReturnType,
-  useSignTypedData,
 } from '../composables/useSignTypedData.js'
 
 export {
+  useSimulateContract,
   type UseSimulateContractParameters,
   type UseSimulateContractReturnType,
-  useSimulateContract,
 } from '../composables/useSimulateContract.js'
 
 export {
+  useSwitchAccount,
   type UseSwitchAccountParameters,
   type UseSwitchAccountReturnType,
-  useSwitchAccount,
 } from '../composables/useSwitchAccount.js'
 
 export {
+  useSwitchChain,
   type UseSwitchChainParameters,
   type UseSwitchChainReturnType,
-  useSwitchChain,
 } from '../composables/useSwitchChain.js'
 
 export {
+  useTransaction,
   type UseTransactionParameters,
   type UseTransactionReturnType,
-  useTransaction,
 } from '../composables/useTransaction.js'
 
 export {
+  useTransactionReceipt,
   type UseTransactionReceiptParameters,
   type UseTransactionReceiptReturnType,
-  useTransactionReceipt,
 } from '../composables/useTransactionReceipt.js'
 
 export {
+  useWatchBlockNumber,
   type UseWatchBlockNumberParameters,
   type UseWatchBlockNumberReturnType,
-  useWatchBlockNumber,
 } from '../composables/useWatchBlockNumber.js'
 
 export {
+  useWatchContractEvent,
   type UseWatchContractEventParameters,
   type UseWatchContractEventReturnType,
-  useWatchContractEvent,
 } from '../composables/useWatchContractEvent.js'
 
 export {
+  useWaitForTransactionReceipt,
   type UseWaitForTransactionReceiptParameters,
   type UseWaitForTransactionReceiptReturnType,
-  useWaitForTransactionReceipt,
 } from '../composables/useWaitForTransactionReceipt.js'
 
 export {
+  useWriteContract,
   type UseWriteContractParameters,
   type UseWriteContractReturnType,
-  useWriteContract,
 } from '../composables/useWriteContract.js'
 
 ////////////////////////////////////////////////////////////////////////////////
-// @wagmi/core
+// basin-hooks
 ////////////////////////////////////////////////////////////////////////////////
 
 export {
-  // Config
-  type Connection,
-  type Connector,
-  type Config,
-  type CreateConfigParameters,
-  type PartializedState,
-  type State,
-  createConfig,
-  // Connector
-  type ConnectorEventMap,
-  type CreateConnectorFn,
-  createConnector,
-  // Errors
-  type ChainNotConfiguredErrorType,
   ChainNotConfiguredError,
-  type ConnectorAlreadyConnectedErrorType,
-  ConnectorAlreadyConnectedError,
-  type ConnectorNotFoundErrorType,
-  ConnectorNotFoundError,
-  type ConnectorAccountNotFoundErrorType,
   ConnectorAccountNotFoundError,
-  type ConnectorChainMismatchErrorType,
+  ConnectorAlreadyConnectedError,
   ConnectorChainMismatchError,
-  type ConnectorUnavailableReconnectingErrorType,
+  ConnectorNotFoundError,
   ConnectorUnavailableReconnectingError,
-  type ProviderNotFoundErrorType,
   ProviderNotFoundError,
-  type SwitchChainNotSupportedErrorType,
   SwitchChainNotSupportedError,
-  // Storage
-  type CreateStorageParameters,
-  type Storage,
-  createStorage,
-  noopStorage,
-  // Transports
-  custom,
-  fallback,
-  http,
-  webSocket,
-  unstable_connector,
-  // Types
-  type Register,
-  type ResolvedRegister,
   // Utilities
   cookieStorage,
   cookieToInitialState,
+  createConfig,
+  createConnector,
+  createStorage,
+  // Transports
+  custom,
   deepEqual,
   deserialize,
+  fallback,
+  http,
+  noopStorage,
   normalizeChainId,
   parseCookie,
   serialize,
-} from '@wagmi/core'
+  unstable_connector,
+  webSocket,
+  // Errors
+  type ChainNotConfiguredErrorType,
+  type Config,
+  // Config
+  type Connection,
+  type Connector,
+  type ConnectorAccountNotFoundErrorType,
+  type ConnectorAlreadyConnectedErrorType,
+  type ConnectorChainMismatchErrorType,
+  // Connector
+  type ConnectorEventMap,
+  type ConnectorNotFoundErrorType,
+  type ConnectorUnavailableReconnectingErrorType,
+  type CreateConfigParameters,
+  type CreateConnectorFn,
+  // Storage
+  type CreateStorageParameters,
+  type PartializedState,
+  type ProviderNotFoundErrorType,
+  // Types
+  type Register,
+  type ResolvedRegister,
+  type State,
+  type Storage,
+  type SwitchChainNotSupportedErrorType,
+} from 'basin-hooks'
 
 ////////////////////////////////////////////////////////////////////////////////
 // Version

@@ -4,14 +4,14 @@ import type {
   Config,
   GetTransactionConfirmationsErrorType,
   ResolvedRegister,
-} from '@wagmi/core'
+} from 'basin-hooks'
 import {
   type GetTransactionConfirmationsData,
   type GetTransactionConfirmationsOptions,
   type GetTransactionConfirmationsQueryFnData,
   type GetTransactionConfirmationsQueryKey,
   getTransactionConfirmationsQueryOptions,
-} from '@wagmi/core/query'
+} from 'basin-hooks/query'
 
 import type { ConfigParameter, QueryParameter } from '../types/properties.js'
 import { type UseQueryReturnType, useQuery } from '../utils/query.js'

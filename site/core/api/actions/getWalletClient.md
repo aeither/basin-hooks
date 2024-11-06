@@ -1,5 +1,5 @@
 <script setup>
-const packageName = '@wagmi/core'
+const packageName = 'basin-hooks'
 const actionName = 'getWalletClient'
 const typeName = 'GetWalletClient'
 </script>
@@ -11,14 +11,14 @@ Action for getting a Viem [`WalletClient`](https://viem.sh/docs/clients/wallet.h
 ## Import
 
 ```ts
-import { getWalletClient } from '@wagmi/core'
+import { getWalletClient } from 'basin-hooks'
 ```
 
 ## Usage
 
 ::: code-group
 ```ts [index.ts]
-import { getWalletClient } from '@wagmi/core'
+import { getWalletClient } from 'basin-hooks'
 import { config } from './config'
 
 const client = getWalletClient(config)
@@ -33,7 +33,7 @@ If you want to optimize bundle size, you should use [`getConnectorClient`](/core
 ## Parameters
 
 ```ts
-import { type GetWalletClientParameters } from '@wagmi/core'
+import { type GetWalletClientParameters } from 'basin-hooks'
 ```
 
 ### account
@@ -44,7 +44,7 @@ Account to use with client. Throws if account is not found on [`connector`](#con
 
 ::: code-group
 ```ts [index.ts]
-import { getWalletClient } from '@wagmi/core'
+import { getWalletClient } from 'basin-hooks'
 import { config } from './config'
 
 const client = getWalletClient(config, {
@@ -62,8 +62,8 @@ ID of chain to use with client.
 
 ::: code-group
 ```ts [index.ts]
-import { getWalletClient } from '@wagmi/core'
-import { mainnet } from '@wagmi/core/chains'
+import { getWalletClient } from 'basin-hooks'
+import { mainnet } from 'basin-hooks/chains'
 import { config } from './config'
 
 const client = getWalletClient(config, {
@@ -82,7 +82,7 @@ const client = getWalletClient(config, {
 
 ::: code-group
 ```ts [index.ts]
-import { getConnections, getWalletClient } from '@wagmi/core'
+import { getConnections, getWalletClient } from 'basin-hooks'
 import { config } from './config'
 
 const connections = getConnections(config)
@@ -96,7 +96,7 @@ const client = getWalletClient(config, {
 ## Return Type
 
 ```ts
-import { type GetChainIdReturnType } from '@wagmi/core'
+import { type GetChainIdReturnType } from 'basin-hooks'
 ```
 
 `WalletClient`
@@ -106,7 +106,7 @@ Viem [`WalletClient`](https://viem.sh/docs/clients/wallet.html) object for the c
 ## Error
 
 ```ts
-import { type GetWalletClientErrorType } from '@wagmi/core'
+import { type GetWalletClientErrorType } from 'basin-hooks'
 ```
 
 <!--@include: @shared/query-imports.md-->

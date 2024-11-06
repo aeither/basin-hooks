@@ -1,6 +1,6 @@
 'use client'
 
-import type { Config, ResolvedRegister } from '@wagmi/core'
+import type { Config, ResolvedRegister } from 'basin-hooks'
 import {
   type GetCallsStatusData,
   type GetCallsStatusErrorType,
@@ -8,8 +8,8 @@ import {
   type GetCallsStatusQueryFnData,
   type GetCallsStatusQueryKey,
   getCallsStatusQueryOptions,
-} from '@wagmi/core/experimental'
-import type { Compute } from '@wagmi/core/internal'
+} from 'basin-hooks/experimental'
+import type { Compute } from 'basin-hooks/internal'
 
 import { useConfig } from '../../hooks/useConfig.js'
 import type { ConfigParameter, QueryParameter } from '../../types/properties.js'

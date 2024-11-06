@@ -2,12 +2,12 @@ import type {
   Config,
   ResolvedRegister,
   WatchContractEventParameters,
-} from '@wagmi/core'
+} from 'basin-hooks'
 import type {
   UnionCompute,
   UnionExactPartial,
   UnionStrictOmit,
-} from '@wagmi/core/internal'
+} from 'basin-hooks/internal'
 import type { Abi, Address, ContractEventName } from 'viem'
 
 import type {

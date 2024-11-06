@@ -1,4 +1,4 @@
-import { createConfig } from '@wagmi/core'
+import { createConfig } from 'basin-hooks'
 import { http, webSocket } from 'viem'
 import { mainnet, optimism } from 'viem/chains'
 import { expectTypeOf, test } from 'vitest'

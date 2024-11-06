@@ -5,14 +5,14 @@ Subscribe to connectors changes.
 ## Import
 
 ```ts
-import { watchConnectors } from '@wagmi/core'
+import { watchConnectors } from 'basin-hooks'
 ```
 
 ## Usage
 
 ::: code-group
 ```ts [index.ts]
-import { watchConnectors } from '@wagmi/core'
+import { watchConnectors } from 'basin-hooks'
 import { config } from './config'
 
 const unwatch = watchConnectors(config, {
@@ -28,7 +28,7 @@ unwatch()
 ## Parameters
 
 ```ts
-import { type WatchConnectorsParameters } from '@wagmi/core'
+import { type WatchConnectorsParameters } from 'basin-hooks'
 ```
 
 ### onChange
@@ -39,7 +39,7 @@ Callback function called when connectors changes.
 
 ::: code-group
 ```ts [index.ts]
-import { watchConnectors } from '@wagmi/core'
+import { watchConnectors } from 'basin-hooks'
 import { config } from './config'
 
 const unwatch = watchConnectors(config, {
@@ -55,7 +55,7 @@ unwatch()
 ## Return Type
 
 ```ts
-import { type WatchConnectorsReturnType } from '@wagmi/core'
+import { type WatchConnectorsReturnType } from 'basin-hooks'
 ```
 
 Function for cleaning up watcher.

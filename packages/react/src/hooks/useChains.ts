@@ -5,8 +5,8 @@ import {
   type GetChainsReturnType,
   type ResolvedRegister,
   getChains,
-} from '@wagmi/core'
-import { watchChains } from '@wagmi/core/internal'
+} from 'basin-hooks'
+import { watchChains } from 'basin-hooks/internal'
 import { useSyncExternalStore } from 'react'
 
 import type { ConfigParameter } from '../types/properties.js'

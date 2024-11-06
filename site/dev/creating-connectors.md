@@ -24,10 +24,10 @@ For example, if you want to add Foo, you would create a file named `foo.ts`. Fil
 
 ## 3. Create the connector object.
 
-Import `createConnector` from `@wagmi/core` and export a new function that accepts a parameters object and returns the `createConnector` result. This is the base of all connectors. The name of the connector name should be the same as the file name.
+Import `createConnector` from `basin-hooks` and export a new function that accepts a parameters object and returns the `createConnector` result. This is the base of all connectors. The name of the connector name should be the same as the file name.
 
 ```ts
-import { createConnector } from '@wagmi/core'
+import { createConnector } from 'basin-hooks'
 
 export type FooBarBazParameters = {}
 
@@ -42,7 +42,7 @@ Now that the base of the connector is set up, you should see a type error that l
 
 ```ts twoslash
 // @errors: 2740
-import { createConnector } from '@wagmi/core'
+import { createConnector } from 'basin-hooks'
 // ---cut---
 createConnector((config) => ({}))
 ```

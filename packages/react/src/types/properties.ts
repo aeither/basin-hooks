@@ -1,6 +1,6 @@
 import type { DefaultError, QueryKey } from '@tanstack/react-query'
-import type { Config } from '@wagmi/core'
-import type { Omit } from '@wagmi/core/internal'
+import type { Config } from 'basin-hooks'
+import type { Omit } from 'basin-hooks/internal'
 
 import type {
   UseInfiniteQueryParameters,

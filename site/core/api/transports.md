@@ -14,12 +14,12 @@ const transports = getSidebar()['/core']
 ## Import
 
 ```ts
-import { http } from '@wagmi/core'
+import { http } from 'basin-hooks'
 ```
 
 ## Built-In Transports
 
-Available via the `'@wagmi/core'` entrypoint.
+Available via the `'basin-hooks'` entrypoint.
 
 <ul>
   <li v-for="transport of transports">

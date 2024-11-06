@@ -1,19 +1,19 @@
 'use client'
 
 import { useQueryClient } from '@tanstack/react-query'
-import type { Config, GetBlockErrorType, ResolvedRegister } from '@wagmi/core'
+import type { Config, GetBlockErrorType, ResolvedRegister } from 'basin-hooks'
 import type {
   Compute,
   UnionCompute,
   UnionStrictOmit,
-} from '@wagmi/core/internal'
+} from 'basin-hooks/internal'
 import {
   type GetBlockData,
   type GetBlockOptions,
   type GetBlockQueryFnData,
   type GetBlockQueryKey,
   getBlockQueryOptions,
-} from '@wagmi/core/query'
+} from 'basin-hooks/query'
 import type { BlockTag } from 'viem'
 
 import type { ConfigParameter, QueryParameter } from '../types/properties.js'

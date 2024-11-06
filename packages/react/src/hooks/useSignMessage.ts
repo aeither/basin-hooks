@@ -1,15 +1,15 @@
 'use client'
 
 import { useMutation } from '@tanstack/react-query'
-import type { SignMessageErrorType } from '@wagmi/core'
-import type { Compute } from '@wagmi/core/internal'
+import type { SignMessageErrorType } from 'basin-hooks'
+import type { Compute } from 'basin-hooks/internal'
 import {
   type SignMessageData,
   type SignMessageMutate,
   type SignMessageMutateAsync,
   type SignMessageVariables,
   signMessageMutationOptions,
-} from '@wagmi/core/query'
+} from 'basin-hooks/query'
 
 import type { ConfigParameter } from '../types/properties.js'
 import type {

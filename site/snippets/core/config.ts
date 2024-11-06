@@ -1,5 +1,5 @@
-import { http, createConfig } from '@wagmi/core'
-import { mainnet, sepolia } from '@wagmi/core/chains'
+import { createConfig, http } from 'basin-hooks'
+import { mainnet, sepolia } from 'basin-hooks/chains'
 
 export const config = createConfig({
   chains: [mainnet, sepolia],

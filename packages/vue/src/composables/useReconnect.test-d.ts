@@ -1,9 +1,9 @@
+import { config } from '@wagmi/test'
 import type {
   Connector,
   CreateConnectorFn,
   ReconnectErrorType,
-} from '@wagmi/core'
-import { config } from '@wagmi/test'
+} from 'basin-hooks'
 import { expectTypeOf, test } from 'vitest'
 
 import type { Address } from 'viem'

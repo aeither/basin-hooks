@@ -226,7 +226,7 @@ It is possible to utilize TanStack Query's SSR strategies with Wagmi Composables
 
 ## Devtools
 
-TanStack Query includes dedicated [Devtools](https://tanstack.com/query/latest/docs/framework/vue/devtools) that assist in visualizing and debugging your queries, their cache states, and much more. You will have to pass a custom `queryKeyFn` to your `QueryClient` for Devtools to correctly serialize BigInt values for display. Alternatively, You can use the `hashFn` from `@wagmi/core/query`, which already handles this serialization.
+TanStack Query includes dedicated [Devtools](https://tanstack.com/query/latest/docs/framework/vue/devtools) that assist in visualizing and debugging your queries, their cache states, and much more. You will have to pass a custom `queryKeyFn` to your `QueryClient` for Devtools to correctly serialize BigInt values for display. Alternatively, You can use the `hashFn` from `basin-hooks/query`, which already handles this serialization.
 
 #### Install
 

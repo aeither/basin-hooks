@@ -1,4 +1,4 @@
-import { createConfig, mock } from '@wagmi/core'
+import { createConfig, mock } from 'basin-hooks'
 import { http } from 'viem'
 
 import { mainnet, mainnet2, optimism } from './chains.js'

@@ -1,5 +1,5 @@
 <script setup>
-const packageName = '@wagmi/core'
+const packageName = 'basin-hooks'
 const actionName = 'getEnsAddress'
 const typeName = 'GetEnsAddress'
 </script>
@@ -11,14 +11,14 @@ Action for fetching ENS address for name.
 ## Import
 
 ```ts
-import { getEnsAddress } from '@wagmi/core'
+import { getEnsAddress } from 'basin-hooks'
 ```
 
 ## Usage
 
 ::: code-group
 ```ts [index.ts]
-import { getEnsAddress } from '@wagmi/core'
+import { getEnsAddress } from 'basin-hooks'
 import { normalize } from 'viem/ens'
 import { config } from './config'
 
@@ -36,7 +36,7 @@ Since ENS names prohibit certain forbidden characters (e.g. underscore) and have
 ## Parameters
 
 ```ts
-import { type GetEnsAddressParameters } from '@wagmi/core'
+import { type GetEnsAddressParameters } from 'basin-hooks'
 ```
 
 ---
@@ -49,7 +49,7 @@ Block number to get ENS address at.
 
 ::: code-group
 ```ts [index.ts]
-import { getEnsAddress } from '@wagmi/core'
+import { getEnsAddress } from 'basin-hooks'
 import { normalize } from 'viem/ens'
 import { config } from './config'
 
@@ -69,7 +69,7 @@ Block tag to get ENS address at.
 
 ::: code-group
 ```ts [index.ts]
-import { getEnsAddress } from '@wagmi/core'
+import { getEnsAddress } from 'basin-hooks'
 import { normalize } from 'viem/ens'
 import { config } from './config'
 
@@ -91,8 +91,8 @@ ID of chain to use when fetching data.
 
 ::: code-group
 ```ts [index.ts]
-import { getEnsAddress } from '@wagmi/core'
-import { mainnet } from '@wagmi/core/chains'
+import { getEnsAddress } from 'basin-hooks'
+import { mainnet } from 'basin-hooks/chains'
 import { normalize } from 'viem/ens'
 import { config } from './config'
 
@@ -112,7 +112,7 @@ The [ENSIP-9](https://docs.ens.domains/ens-improvement-proposals/ensip-9-multich
 
 ::: code-group
 ```ts [index.ts]
-import { getEnsAddress } from '@wagmi/core'
+import { getEnsAddress } from 'basin-hooks'
 import { normalize } from 'viem/ens'
 import { config } from './config'
 
@@ -132,7 +132,7 @@ Name to get the address for.
 
 ::: code-group
 ```ts [index.ts]
-import { getEnsAddress } from '@wagmi/core'
+import { getEnsAddress } from 'basin-hooks'
 import { normalize } from 'viem/ens'
 import { config } from './config'
 
@@ -152,7 +152,7 @@ const ensAddress = await getEnsAddress(config, {
 
 ::: code-group
 ```ts [index.ts]
-import { getEnsAddress } from '@wagmi/core'
+import { getEnsAddress } from 'basin-hooks'
 import { normalize } from 'viem/ens'
 import { config } from './config'
 
@@ -167,7 +167,7 @@ const ensAddress = await getEnsAddress(config, {
 ## Return Type
 
 ```ts
-import { type GetEnsAddressReturnType } from '@wagmi/core'
+import { type GetEnsAddressReturnType } from 'basin-hooks'
 ```
 
 `string`
@@ -177,7 +177,7 @@ ENS address.
 ## Error
 
 ```ts
-import { type GetEnsAddressErrorType } from '@wagmi/core'
+import { type GetEnsAddressErrorType } from 'basin-hooks'
 ```
 
 <!--@include: @shared/query-imports.md-->

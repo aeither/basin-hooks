@@ -2,14 +2,14 @@ import type {
   Config,
   EstimateGasErrorType,
   ResolvedRegister,
-} from '@wagmi/core'
+} from 'basin-hooks'
 import {
   type EstimateGasData,
   type EstimateGasOptions,
   type EstimateGasQueryFnData,
   type EstimateGasQueryKey,
   estimateGasQueryOptions,
-} from '@wagmi/core/query'
+} from 'basin-hooks/query'
 import { computed } from 'vue'
 
 import type { ConfigParameter, QueryParameter } from '../types/properties.js'

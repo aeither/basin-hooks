@@ -80,7 +80,7 @@ test('getClient', () => {
   ).toThrowErrorMatchingInlineSnapshot(`
     [ChainNotConfiguredError: Chain not configured.
 
-    Version: @wagmi/core@x.y.z]
+    Version: basin-hooks@x.y.z]
   `)
 
   expect(() => {
@@ -90,7 +90,7 @@ test('getClient', () => {
   }).toThrowErrorMatchingInlineSnapshot(`
     [ChainNotConfiguredError: Chain not configured.
 
-    Version: @wagmi/core@x.y.z]
+    Version: basin-hooks@x.y.z]
   `)
 })
 

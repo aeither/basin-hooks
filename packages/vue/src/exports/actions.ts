@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////////////////////////
-// @wagmi/core/actions
+// basin-hooks/actions
 ////////////////////////////////////////////////////////////////////////////////
 
 // biome-ignore lint/performance/noBarrelFile: entrypoint module
 // biome-ignore lint/performance/noReExportAll: entrypoint module
-export * from '@wagmi/core/actions'
+export * from 'basin-hooks/actions'

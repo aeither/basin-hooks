@@ -83,7 +83,7 @@ To start the local development playgrounds, run one of the following commands. T
 
 ```bash
 pnpm dev              # `wagmi` playground
-pnpm dev:core         # `@wagmi/core` playground
+pnpm dev:core         # `basin-hooks` playground
 pnpm dev:create-wagmi # `create-wagmi` cli tool
 pnpm dev:cli          # `@wagmi/cli` tool
 pnpm dev:next         # `wagmi` playground with Next.js
@@ -108,7 +108,7 @@ Next, make sure you have set up your [env variables](#_4-adding-the-env-variable
 - `pnpm test [package?]` — runs tests in watch mode
 - `pnpm test:cov` — runs tests and reports coverage
 - `pnpm test:ui` — runs tests in the [Vitest UI](https://vitest.dev/guide/ui.html)
-- `pnpm test:core` — runs `@wagmi/core` tests
+- `pnpm test:core` — runs `basin-hooks` tests
 - `pnpm test:react` — runs `wagmi` tests
 - `pnpm test:vue` — runs `@wagmi/vue` tests
 

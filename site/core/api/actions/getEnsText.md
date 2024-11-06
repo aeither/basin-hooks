@@ -1,5 +1,5 @@
 <script setup>
-const packageName = '@wagmi/core'
+const packageName = 'basin-hooks'
 const actionName = 'getEnsText'
 const typeName = 'GetEnsText'
 </script>
@@ -11,14 +11,14 @@ Action for fetching a text record for a specified ENS name and key.
 ## Import
 
 ```ts
-import { getEnsText } from '@wagmi/core'
+import { getEnsText } from 'basin-hooks'
 ```
 
 ## Usage
 
 ::: code-group
 ```ts [index.ts]
-import { getEnsText } from '@wagmi/core'
+import { getEnsText } from 'basin-hooks'
 import { normalize } from 'viem/ens'
 import { config } from './config'
 
@@ -37,7 +37,7 @@ Since ENS names prohibit certain forbidden characters (e.g. underscore) and have
 ## Parameters
 
 ```ts
-import { type GetEnsTextParameters } from '@wagmi/core'
+import { type GetEnsTextParameters } from 'basin-hooks'
 ```
 
 ---
@@ -50,7 +50,7 @@ Block number to get the text at.
 
 ::: code-group
 ```ts [index.ts]
-import { getEnsText } from '@wagmi/core'
+import { getEnsText } from 'basin-hooks'
 import { normalize } from 'viem/ens'
 import { config } from './config'
 
@@ -71,7 +71,7 @@ Block tag to get the text at.
 
 ::: code-group
 ```ts [index.ts]
-import { getEnsText } from '@wagmi/core'
+import { getEnsText } from 'basin-hooks'
 import { normalize } from 'viem/ens'
 import { config } from './config'
 
@@ -94,8 +94,8 @@ ID of chain to use when fetching data.
 
 ::: code-group
 ```ts [index.ts]
-import { getEnsText } from '@wagmi/core'
-import { mainnet } from '@wagmi/core/chains'
+import { getEnsText } from 'basin-hooks'
+import { mainnet } from 'basin-hooks/chains'
 import { normalize } from 'viem/ens'
 import { config } from './config'
 
@@ -116,7 +116,7 @@ ENS key to get Text for.
 
 ::: code-group
 ```ts [index.ts]
-import { getEnsText } from '@wagmi/core'
+import { getEnsText } from 'basin-hooks'
 import { normalize } from 'viem/ens'
 import { config } from './config'
 
@@ -136,7 +136,7 @@ Name to get the text for.
 
 ::: code-group
 ```ts [index.ts]
-import { getEnsText } from '@wagmi/core'
+import { getEnsText } from 'basin-hooks'
 import { normalize } from 'viem/ens'
 import { config } from './config'
 
@@ -157,7 +157,7 @@ const ensText = await getEnsText(config, {
 
 ::: code-group
 ```ts [index.ts]
-import { getEnsText } from '@wagmi/core'
+import { getEnsText } from 'basin-hooks'
 import { normalize } from 'viem/ens'
 import { config } from './config'
 
@@ -173,7 +173,7 @@ const ensText = await getEnsText(config, {
 ## Return Type
 
 ```ts
-import { type GetEnsTextReturnType } from '@wagmi/core'
+import { type GetEnsTextReturnType } from 'basin-hooks'
 ```
 
 `string | null`
@@ -185,7 +185,7 @@ Returns `null` if name does not have text assigned.
 ## Error
 
 ```ts
-import { type getEnsTextError } from '@wagmi/core'
+import { type getEnsTextError } from 'basin-hooks'
 ```
 
 <!--@include: @shared/query-imports.md-->

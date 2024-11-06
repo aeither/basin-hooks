@@ -1,5 +1,5 @@
 <script setup>
-const packageName = '@wagmi/core'
+const packageName = 'basin-hooks'
 const actionName = 'switchChain'
 const typeName = 'SwitchChain'
 </script>
@@ -11,15 +11,15 @@ Action for switching the target chain for a connector or the Wagmi [`Config`](/c
 ## Import
 
 ```ts
-import { switchChain } from '@wagmi/core'
+import { switchChain } from 'basin-hooks'
 ```
 
 ## Usage
 
 ::: code-group
 ```ts [index.ts]
-import { switchChain } from '@wagmi/core'
-import { mainnet } from '@wagmi/core/chains'
+import { switchChain } from 'basin-hooks'
+import { mainnet } from 'basin-hooks/chains'
 import { config } from './config'
 
 await switchChain(config, { chainId: mainnet.id })
@@ -34,7 +34,7 @@ When connected, `switchChain` will switch the target chain for the connector. Wh
 ## Parameters
 
 ```ts
-import { type SwitchChainParameters } from '@wagmi/core'
+import { type SwitchChainParameters } from 'basin-hooks'
 ```
 
 ### addEthereumChainParameter
@@ -45,8 +45,8 @@ import { type SwitchChainParameters } from '@wagmi/core'
 
 ::: code-group
 ```ts [index.ts]
-import { switchChain } from '@wagmi/core'
-import { mainnet } from '@wagmi/core/chains'
+import { switchChain } from 'basin-hooks'
+import { mainnet } from 'basin-hooks/chains'
 import { config } from './config'
 
 const result = await switchChain(config, {
@@ -67,8 +67,8 @@ ID of chain to switch to.
 
 ::: code-group
 ```ts [index.ts]
-import { switchChain } from '@wagmi/core'
-import { mainnet } from '@wagmi/core/chains'
+import { switchChain } from 'basin-hooks'
+import { mainnet } from 'basin-hooks/chains'
 import { config } from './config'
 
 const result = await switchChain(config, {
@@ -86,8 +86,8 @@ const result = await switchChain(config, {
 
 ::: code-group
 ```ts [index.ts]
-import { getConnections, switchAccount } from '@wagmi/core'
-import { mainnet } from '@wagmi/core/chains'
+import { getConnections, switchAccount } from 'basin-hooks'
+import { mainnet } from 'basin-hooks/chains'
 import { config } from './config'
 
 const connections = getConnections(config)
@@ -102,7 +102,7 @@ const result = await switchChain(config, {
 ## Return Type
 
 ```ts
-import { type SwitchChainReturnType } from '@wagmi/core'
+import { type SwitchChainReturnType } from 'basin-hooks'
 ```
 
 `Chain`
@@ -112,7 +112,7 @@ Chain that was switched to.
 ## Error
 
 ```ts
-import { type SwitchChainErrorType } from '@wagmi/core'
+import { type SwitchChainErrorType } from 'basin-hooks'
 ```
 
 <!--@include: @shared/mutation-imports.md-->

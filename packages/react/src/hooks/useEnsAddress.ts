@@ -4,15 +4,15 @@ import type {
   Config,
   GetEnsAddressErrorType,
   ResolvedRegister,
-} from '@wagmi/core'
-import type { Compute } from '@wagmi/core/internal'
+} from 'basin-hooks'
+import type { Compute } from 'basin-hooks/internal'
 import {
   type GetEnsAddressData,
   type GetEnsAddressOptions,
   type GetEnsAddressQueryFnData,
   type GetEnsAddressQueryKey,
   getEnsAddressQueryOptions,
-} from '@wagmi/core/query'
+} from 'basin-hooks/query'
 
 import type { ConfigParameter, QueryParameter } from '../types/properties.js'
 import { type UseQueryReturnType, useQuery } from '../utils/query.js'

@@ -13,8 +13,8 @@ import type {
   ExactPartial,
   Omit,
   UnionStrictOmit,
-} from '@wagmi/core/internal'
-import { hashFn } from '@wagmi/core/query'
+} from 'basin-hooks/internal'
+import { hashFn } from 'basin-hooks/query'
 import { type MaybeRef, computed, unref } from 'vue'
 
 import type { DeepMaybeRef, DeepUnwrapRef } from '../types/ref.js'

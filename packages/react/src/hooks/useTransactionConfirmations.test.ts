@@ -3,7 +3,7 @@ import { renderHook, waitFor } from '@wagmi/test/react'
 import type { Hash } from 'viem'
 import { expect, test } from 'vitest'
 
-import { getTransactionReceipt } from '@wagmi/core'
+import { getTransactionReceipt } from 'basin-hooks'
 import { useTransactionConfirmations } from './useTransactionConfirmations.js'
 
 test('default', async () => {

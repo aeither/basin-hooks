@@ -4,15 +4,15 @@ import type {
   Config,
   GetStorageAtErrorType,
   ResolvedRegister,
-} from '@wagmi/core'
-import type { Compute } from '@wagmi/core/internal'
+} from 'basin-hooks'
+import type { Compute } from 'basin-hooks/internal'
+import type { GetStorageAtQueryFnData } from 'basin-hooks/query'
 import {
   type GetStorageAtData,
   type GetStorageAtOptions,
   type GetStorageAtQueryKey,
   getStorageAtQueryOptions,
-} from '@wagmi/core/query'
-import type { GetStorageAtQueryFnData } from '@wagmi/core/query'
+} from 'basin-hooks/query'
 import type { ConfigParameter, QueryParameter } from '../types/properties.js'
 import { type UseQueryReturnType, useQuery } from '../utils/query.js'
 import { useChainId } from './useChainId.js'

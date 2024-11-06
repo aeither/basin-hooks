@@ -1,6 +1,6 @@
-import { connect } from '@wagmi/core'
 import { config } from '@wagmi/test'
 import { renderComposable } from '@wagmi/test/vue'
+import { connect } from 'basin-hooks'
 import { expect, test } from 'vitest'
 
 import { useConnections } from './useConnections.js'

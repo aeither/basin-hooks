@@ -1,5 +1,5 @@
 <script setup>
-const packageName = '@wagmi/core'
+const packageName = 'basin-hooks'
 const actionName = 'getConnectorClient'
 const typeName = 'GetConnectorClient'
 </script>
@@ -11,14 +11,14 @@ Action for getting a Viem [`Client`](https://viem.sh/docs/clients/custom.html) o
 ## Import
 
 ```ts
-import { getConnectorClient } from '@wagmi/core'
+import { getConnectorClient } from 'basin-hooks'
 ```
 
 ## Usage
 
 ::: code-group
 ```ts [index.ts]
-import { getConnectorClient } from '@wagmi/core'
+import { getConnectorClient } from 'basin-hooks'
 import { config } from './config'
 
 const client = await getConnectorClient(config)
@@ -29,7 +29,7 @@ const client = await getConnectorClient(config)
 ## Parameters
 
 ```ts
-import { type GetConnectorClientParameters } from '@wagmi/core'
+import { type GetConnectorClientParameters } from 'basin-hooks'
 ```
 
 ### account
@@ -40,7 +40,7 @@ Account to use with client. Throws if account is not found on [`connector`](#con
 
 ::: code-group
 ```ts [index.ts]
-import { getConnectorClient } from '@wagmi/core'
+import { getConnectorClient } from 'basin-hooks'
 import { config } from './config'
 
 const client = await getConnectorClient(config, {
@@ -58,8 +58,8 @@ ID of chain to use with client.
 
 ::: code-group
 ```ts [index.ts]
-import { getConnectorClient } from '@wagmi/core'
-import { mainnet } from '@wagmi/core/chains'
+import { getConnectorClient } from 'basin-hooks'
+import { mainnet } from 'basin-hooks/chains'
 import { config } from './config'
 
 const client = await getConnectorClient(config, {
@@ -78,7 +78,7 @@ const client = await getConnectorClient(config, {
 
 ::: code-group
 ```ts [index.ts]
-import { getConnections, getConnectorClient } from '@wagmi/core'
+import { getConnections, getConnectorClient } from 'basin-hooks'
 import { config } from './config'
 
 const connections = getConnections(config)
@@ -92,7 +92,7 @@ const client = await getConnectorClient(config, {
 ## Return Type
 
 ```ts
-import { type GetChainIdReturnType } from '@wagmi/core'
+import { type GetChainIdReturnType } from 'basin-hooks'
 ```
 
 `Client`
@@ -102,7 +102,7 @@ Viem [`Client`](https://viem.sh/docs/clients/custom.html) object for the current
 ## Error
 
 ```ts
-import { type GetConnectorClientErrorType } from '@wagmi/core'
+import { type GetConnectorClientErrorType } from 'basin-hooks'
 ```
 
 <!--@include: @shared/query-imports.md-->

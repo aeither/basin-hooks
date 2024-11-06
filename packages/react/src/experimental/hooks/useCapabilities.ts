@@ -1,6 +1,6 @@
 'use client'
 
-import type { Config, ResolvedRegister } from '@wagmi/core'
+import type { Config, ResolvedRegister } from 'basin-hooks'
 import {
   type GetCapabilitiesData,
   type GetCapabilitiesErrorType,
@@ -8,8 +8,8 @@ import {
   type GetCapabilitiesQueryFnData,
   type GetCapabilitiesQueryKey,
   getCapabilitiesQueryOptions,
-} from '@wagmi/core/experimental'
-import type { Compute } from '@wagmi/core/internal'
+} from 'basin-hooks/experimental'
+import type { Compute } from 'basin-hooks/internal'
 
 import { useAccount } from '../../hooks/useAccount.js'
 import { useConfig } from '../../hooks/useConfig.js'

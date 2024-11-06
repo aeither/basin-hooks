@@ -1,5 +1,5 @@
 <script setup>
-const packageName = '@wagmi/core'
+const packageName = 'basin-hooks'
 const actionName = 'getEnsName'
 const typeName = 'GetEnsName'
 </script>
@@ -11,14 +11,14 @@ Action for fetching primary ENS name for address.
 ## Import
 
 ```ts
-import { getEnsName } from '@wagmi/core'
+import { getEnsName } from 'basin-hooks'
 ```
 
 ## Usage
 
 ::: code-group
 ```ts [index.ts]
-import { getEnsName } from '@wagmi/core'
+import { getEnsName } from 'basin-hooks'
 import { config } from './config'
 
 const ensName = getEnsName(config, {
@@ -31,7 +31,7 @@ const ensName = getEnsName(config, {
 ## Parameters
 
 ```ts
-import { type GetEnsNameParameters } from '@wagmi/core'
+import { type GetEnsNameParameters } from 'basin-hooks'
 ```
 
 ### address
@@ -42,7 +42,7 @@ Address to get the name for.
 
 ::: code-group
 ```ts [index.ts]
-import { getEnsName } from '@wagmi/core'
+import { getEnsName } from 'basin-hooks'
 import { config } from './config'
 
 const ensName = await getEnsName(config, {
@@ -62,7 +62,7 @@ Block number to get name at.
 
 ::: code-group
 ```ts [index.ts]
-import { getEnsName } from '@wagmi/core'
+import { getEnsName } from 'basin-hooks'
 import { config } from './config'
 
 const ensName = getEnsName(config, {
@@ -81,7 +81,7 @@ Block tag to get name at.
 
 ::: code-group
 ```ts [index.ts]
-import { getEnsName } from '@wagmi/core'
+import { getEnsName } from 'basin-hooks'
 import { config } from './config'
 
 const ensName = getEnsName(config, {
@@ -102,8 +102,8 @@ ID of chain to use when fetching data.
 
 ::: code-group
 ```ts [index.ts]
-import { getEnsName } from '@wagmi/core'
-import { mainnet } from '@wagmi/core/chains'
+import { getEnsName } from 'basin-hooks'
+import { mainnet } from 'basin-hooks/chains'
 import { config } from './config'
 
 const ensName = await getEnsName(config, {
@@ -123,7 +123,7 @@ const ensName = await getEnsName(config, {
 
 ::: code-group
 ```ts [index.ts]
-import { getEnsName } from '@wagmi/core'
+import { getEnsName } from 'basin-hooks'
 import { config } from './config'
 
 const ensName = await getEnsName(config, {
@@ -137,7 +137,7 @@ const ensName = await getEnsName(config, {
 ## Return Type
 
 ```ts
-import { type GetEnsNameReturnType } from '@wagmi/core'
+import { type GetEnsNameReturnType } from 'basin-hooks'
 ```
 
 `string | null`
@@ -147,7 +147,7 @@ The primary ENS name for the address. Returns `null` if address does not have pr
 ## Error
 
 ```ts
-import { type GetEnsNameErrorType } from '@wagmi/core'
+import { type GetEnsNameErrorType } from 'basin-hooks'
 ```
 
 <!--@include: @shared/query-imports.md-->

@@ -1,5 +1,5 @@
 <script setup>
-const packageName = '@wagmi/core'
+const packageName = 'basin-hooks'
 const actionName = 'watchPendingTransactions'
 const typeName = 'WatchPendingTransactions'
 </script>
@@ -11,14 +11,14 @@ Action that watches and returns pending transaction hashes.
 ## Import
 
 ```ts
-import { watchPendingTransactions } from '@wagmi/core'
+import { watchPendingTransactions } from 'basin-hooks'
 ```
 
 ## Usage
 
 ::: code-group
 ```ts [index.ts]
-import { watchPendingTransactions } from '@wagmi/core'
+import { watchPendingTransactions } from 'basin-hooks'
 import { config } from './config'
 
 const unwatch = watchPendingTransactions(config, {
@@ -33,7 +33,7 @@ const unwatch = watchPendingTransactions(config, {
 ## Parameters
 
 ```ts
-import { type WatchPendingTransactionsParameters } from '@wagmi/core'
+import { type WatchPendingTransactionsParameters } from 'basin-hooks'
 ```
 
 ### batch
@@ -45,7 +45,7 @@ import { type WatchPendingTransactionsParameters } from '@wagmi/core'
 
 ::: code-group
 ```ts [index.ts]
-import { watchPendingTransactions } from '@wagmi/core'
+import { watchPendingTransactions } from 'basin-hooks'
 
 const unwatch = watchPendingTransactions(config, {
   batch: false, // [!code focus]
@@ -65,8 +65,8 @@ ID of chain to use when fetching data.
 
 ::: code-group
 ```ts [index.ts]
-import { watchPendingTransactions } from '@wagmi/core'
-import { mainnet } from '@wagmi/core/chains'
+import { watchPendingTransactions } from 'basin-hooks'
+import { mainnet } from 'basin-hooks/chains'
 import { config } from './config'
 
 const unwatch = watchPendingTransactions(config, {
@@ -87,7 +87,7 @@ Error thrown from watching pending transactions.
 
 ::: code-group
 ```ts [index.ts]
-import { watchPendingTransactions } from '@wagmi/core'
+import { watchPendingTransactions } from 'basin-hooks'
 import { config } from './config'
 
 const unwatch = watchPendingTransactions(config, {
@@ -110,7 +110,7 @@ Callback when new incoming pending transactions are detected.
 
 ::: code-group
 ```ts [index.ts]
-import { watchPendingTransactions } from '@wagmi/core'
+import { watchPendingTransactions } from 'basin-hooks'
 import { config } from './config'
 
 const unwatch = watchPendingTransactions(config, {
@@ -131,7 +131,7 @@ const unwatch = watchPendingTransactions(config, {
 
 ::: code-group
 ```ts [index.ts]
-import { watchPendingTransactions } from '@wagmi/core'
+import { watchPendingTransactions } from 'basin-hooks'
 import { config } from './config'
 
 const unwatch = watchPendingTransactions(config, {
@@ -153,7 +153,7 @@ const unwatch = watchPendingTransactions(config, {
 
 ::: code-group
 ```ts [index.ts]
-import { watchPendingTransactions } from '@wagmi/core'
+import { watchPendingTransactions } from 'basin-hooks'
 import { config } from './config'
 
 const unwatch = watchPendingTransactions(config, {
@@ -175,7 +175,7 @@ const unwatch = watchPendingTransactions(config, {
 
 ::: code-group
 ```ts [index.ts]
-import { watchPendingTransactions } from '@wagmi/core'
+import { watchPendingTransactions } from 'basin-hooks'
 import { config } from './config'
 
 const unwatch = watchPendingTransactions(config, {
@@ -191,7 +191,7 @@ const unwatch = watchPendingTransactions(config, {
 ## Return Type
 
 ```ts
-import { type WatchPendingTransactionsReturnType } from '@wagmi/core'
+import { type WatchPendingTransactionsReturnType } from 'basin-hooks'
 ```
 
 Function to unsubscribe from pending transaction listener.
@@ -199,7 +199,7 @@ Function to unsubscribe from pending transaction listener.
 ## Error
 
 ```ts
-import { type WatchPendingTransactionsError } from '@wagmi/core'
+import { type WatchPendingTransactionsError } from 'basin-hooks'
 ```
 
 ## Viem

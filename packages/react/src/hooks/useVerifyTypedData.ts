@@ -4,14 +4,14 @@ import type {
   Config,
   ResolvedRegister,
   VerifyTypedDataErrorType,
-} from '@wagmi/core'
+} from 'basin-hooks'
+import type { VerifyTypedDataQueryFnData } from 'basin-hooks/query'
 import {
   type VerifyTypedDataData,
   type VerifyTypedDataOptions,
   type VerifyTypedDataQueryKey,
   verifyTypedDataQueryOptions,
-} from '@wagmi/core/query'
-import type { VerifyTypedDataQueryFnData } from '@wagmi/core/query'
+} from 'basin-hooks/query'
 import type { TypedData } from 'viem'
 import type { ConfigParameter, QueryParameter } from '../types/properties.js'
 import { type UseQueryReturnType, useQuery } from '../utils/query.js'

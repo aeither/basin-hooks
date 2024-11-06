@@ -1,5 +1,5 @@
-import type { Connector, SwitchAccountErrorType } from '@wagmi/core'
 import { config } from '@wagmi/test'
+import type { Connector, SwitchAccountErrorType } from 'basin-hooks'
 import { expectTypeOf, test } from 'vitest'
 
 import type { Address } from 'viem'

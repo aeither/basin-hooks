@@ -1,5 +1,5 @@
 <script setup>
-const packageName = '@wagmi/core'
+const packageName = 'basin-hooks'
 const actionName = 'getProof'
 const typeName = 'getProof'
 </script>
@@ -11,14 +11,14 @@ Action for return the account and storage values of the specified account includ
 ## Import
 
 ```ts
-import { getProof } from '@wagmi/core'
+import { getProof } from 'basin-hooks'
 ```
 
 ## Usage
 
 ::: code-group
 ```ts [index.ts]
-import { getProof } from '@wagmi/core'
+import { getProof } from 'basin-hooks'
 import { config } from './config'
 
 await getProof(config, {
@@ -34,7 +34,7 @@ await getProof(config, {
 ## Parameters
 
 ```ts
-import { type GetProofParameters } from '@wagmi/core'
+import { type GetProofParameters } from 'basin-hooks'
 ```
 
 ### address
@@ -45,7 +45,7 @@ The account address to get the proof for.
 
 ::: code-group
 ```ts [index.ts]
-import { getProof } from '@wagmi/core'
+import { getProof } from 'basin-hooks'
 import { config } from './config'
 
 await getProof(config, {
@@ -66,7 +66,7 @@ Array of storage-keys that should be proofed and included.
 
 ::: code-group
 ```ts [index.ts]
-import { getProof } from '@wagmi/core'
+import { getProof } from 'basin-hooks'
 import { config } from './config'
 
 await getProof(config, {
@@ -87,7 +87,7 @@ Proof at a given block number.
 
 ::: code-group
 ```ts [index.ts]
-import { getProof } from '@wagmi/core'
+import { getProof } from 'basin-hooks'
 import { config } from './config'
 
 await getProof(config, {
@@ -109,7 +109,7 @@ Proof at a given block tag.
 
 ::: code-group
 ```ts [index.ts]
-import { getProof } from '@wagmi/core'
+import { getProof } from 'basin-hooks'
 import { config } from './config'
 
 await getProof(config, {
@@ -131,9 +131,9 @@ The ID of chain to get the proof for.
 
 ::: code-group
 ```ts [index.ts]
-import { getProof } from '@wagmi/core'
+import { getProof } from 'basin-hooks'
 import { config } from './config'
-import { optimism } from '@wagmi/core/chains'
+import { optimism } from 'basin-hooks/chains'
 
 await getProof(config, {
   chainId: optimism.id, // [!code focus]
@@ -149,7 +149,7 @@ await getProof(config, {
 ## Return Type
 
 ```ts
-import { type GetProofReturnType } from '@wagmi/core'
+import { type GetProofReturnType } from 'basin-hooks'
 ```
 
 `Proof`
@@ -159,7 +159,7 @@ Proof data.
 ## Error
 
 ```ts
-import { type GetProofErrorType } from '@wagmi/core'
+import { type GetProofErrorType } from 'basin-hooks'
 ```
 
 <!--@include: @shared/query-imports.md-->

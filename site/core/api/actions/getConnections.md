@@ -5,14 +5,14 @@ Action for getting active connections.
 ## Import
 
 ```ts
-import { getConnections } from '@wagmi/core'
+import { getConnections } from 'basin-hooks'
 ```
 
 ## Usage
 
 ::: code-group
 ```ts [index.ts]
-import { getConnections } from '@wagmi/core'
+import { getConnections } from 'basin-hooks'
 import { config } from './config'
 
 const connections = getConnections(config)
@@ -23,7 +23,7 @@ const connections = getConnections(config)
 ## Return Type
 
 ```ts
-import { type GetConnectionsReturnType } from '@wagmi/core'
+import { type GetConnectionsReturnType } from 'basin-hooks'
 ```
 
 [`Connection[]`](/core/api/createConfig#connection)

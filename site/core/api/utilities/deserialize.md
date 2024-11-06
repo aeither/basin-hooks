@@ -1,5 +1,5 @@
 <script setup>
-const packageName = '@wagmi/core'
+const packageName = 'basin-hooks'
 </script>
 
 <!--@include: @shared/utilities/deserialize.md-->

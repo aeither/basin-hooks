@@ -1,8 +1,7 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { render, waitFor } from '@testing-library/react'
-import { http, connect, createConfig, mock } from '@wagmi/core'
 import { accounts, addressRegex, config, mainnet } from '@wagmi/test'
-import React from 'react'
+import { connect, createConfig, http, mock } from 'basin-hooks'
 import { expect, test } from 'vitest'
 
 import { WagmiProvider } from './context.js'

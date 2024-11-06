@@ -1,12 +1,12 @@
+import type { EthereumProvider } from '@walletconnect/ethereum-provider'
 import {
   ChainNotConfiguredError,
   type Connector,
   ProviderNotFoundError,
   createConnector,
   extractRpcUrls,
-} from '@wagmi/core'
-import type { Compute, ExactPartial, Omit } from '@wagmi/core/internal'
-import type { EthereumProvider } from '@walletconnect/ethereum-provider'
+} from 'basin-hooks'
+import type { Compute, ExactPartial, Omit } from 'basin-hooks/internal'
 import {
   type AddEthereumChainParameter,
   type Address,

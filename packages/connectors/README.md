@@ -5,7 +5,7 @@ Collection of connectors for Wagmi
 ## Installation
 
 ```bash
-pnpm add @wagmi/connectors @wagmi/core viem
+pnpm add @wagmi/connectors basin-hooks viem
 ```
 
 ## Documentation

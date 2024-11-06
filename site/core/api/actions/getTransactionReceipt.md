@@ -1,5 +1,5 @@
 <script setup>
-const packageName = '@wagmi/core'
+const packageName = 'basin-hooks'
 const actionName = 'getTransactionReceipt'
 const typeName = 'getTransactionReceipt'
 </script>
@@ -11,14 +11,14 @@ Action for return the [Transaction Receipt](https://viem.sh/docs/glossary/terms.
 ## Import
 
 ```ts
-import { getTransactionReceipt } from '@wagmi/core'
+import { getTransactionReceipt } from 'basin-hooks'
 ```
 
 ## Usage
 
 ::: code-group
 ```ts [index.ts]
-import { getTransactionReceipt } from '@wagmi/core'
+import { getTransactionReceipt } from 'basin-hooks'
 import { config } from './config'
 
 await getTransactionReceipt(config, {
@@ -31,7 +31,7 @@ await getTransactionReceipt(config, {
 ## Parameters
 
 ```ts
-import { type GetTransactionReceiptParameters } from '@wagmi/core'
+import { type GetTransactionReceiptParameters } from 'basin-hooks'
 ```
 
 ### hash
@@ -42,7 +42,7 @@ A transaction hash.
 
 ::: code-group
 ```ts [index.ts]
-import { getTransactionReceipt } from '@wagmi/core'
+import { getTransactionReceipt } from 'basin-hooks'
 import { config } from './config'
 
 await getTransactionReceipt(config, {
@@ -60,8 +60,8 @@ The ID of chain to return the transaction receipt from.
 
 ::: code-group
 ```ts [index.ts]
-import { getTransactionReceipt } from '@wagmi/core'
-import { mainnet } from '@wagmi/core/chains'
+import { getTransactionReceipt } from 'basin-hooks'
+import { mainnet } from 'basin-hooks/chains'
 import { config } from './config'
 
 await getTransactionReceipt(config, {
@@ -75,7 +75,7 @@ await getTransactionReceipt(config, {
 ## Return Type
 
 ```ts
-import { type GetTransactionReceiptReturnType } from '@wagmi/core'
+import { type GetTransactionReceiptReturnType } from 'basin-hooks'
 ```
 
 [`TransactionReceipt`](https://viem.sh/docs/glossary/types.html#transactionreceipt)
@@ -85,7 +85,7 @@ The transaction receipt.
 ## Error
 
 ```ts
-import { type GetTransactionReceiptErrorType } from '@wagmi/core'
+import { type GetTransactionReceiptErrorType } from 'basin-hooks'
 ```
 
 <!--@include: @shared/query-imports.md-->

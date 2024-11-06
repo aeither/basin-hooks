@@ -1,6 +1,6 @@
-import { connect, disconnect, getAccount } from '@wagmi/core'
 import { config, privateKey, typedData } from '@wagmi/test'
 import { renderHook, waitFor } from '@wagmi/test/react'
+import { connect, disconnect, getAccount } from 'basin-hooks'
 import { recoverTypedDataAddress } from 'viem'
 import { expect, test } from 'vitest'
 

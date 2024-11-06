@@ -6,7 +6,7 @@ import {
   type ResolvedRegister,
   getChainId,
   watchChainId,
-} from '@wagmi/core'
+} from 'basin-hooks'
 import { useSyncExternalStore } from 'react'
 
 import type { ConfigParameter } from '../types/properties.js'

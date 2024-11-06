@@ -1,6 +1,6 @@
-import { connect } from '@wagmi/core'
 import { config } from '@wagmi/test'
 import { renderComposable, waitFor } from '@wagmi/test/vue'
+import { connect } from 'basin-hooks'
 import { beforeEach, expect, test } from 'vitest'
 
 import { useAccount } from './useAccount.js'

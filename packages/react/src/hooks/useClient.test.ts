@@ -1,6 +1,6 @@
-import { switchChain } from '@wagmi/core'
 import { config } from '@wagmi/test'
 import { renderHook } from '@wagmi/test/react'
+import { switchChain } from 'basin-hooks'
 import { Fragment, createElement } from 'react'
 import { expect, test } from 'vitest'
 

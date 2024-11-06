@@ -1,4 +1,4 @@
-# @wagmi/core
+# basin-hooks
 
 ## 2.14.2
 
@@ -1167,7 +1167,7 @@
 
 ### Patch Changes
 
-- [#1705](https://github.com/wevm/wagmi/pull/1705) [`9ff797dc`](https://github.com/wevm/wagmi/commit/9ff797dcb979dc86b798a432b74c98598165430d) Thanks [@jxom](https://github.com/jxom)! - Added the following chains to the `@wagmi/core/chains` entrypoint:
+- [#1705](https://github.com/wevm/wagmi/pull/1705) [`9ff797dc`](https://github.com/wevm/wagmi/commit/9ff797dcb979dc86b798a432b74c98598165430d) Thanks [@jxom](https://github.com/jxom)! - Added the following chains to the `basin-hooks/chains` entrypoint:
 
   - `crossbell` (thanks @Songkeys)
   - `filecoin` & `filecoinHyperspace` (thanks @neil0x46dc)
@@ -1378,7 +1378,7 @@
   })
   ```
 
-- [#1344](https://github.com/wevm/wagmi/pull/1344) [`57a19374`](https://github.com/wevm/wagmi/commit/57a1937464a4ccf72719fc86c38d1734f6306652) Thanks [@jxom](https://github.com/jxom)! - **Breaking**: With the introduction of the [`@wagmi/core/chains` entrypoint](/core/chains), `@wagmi/core` no longer exports the following:
+- [#1344](https://github.com/wevm/wagmi/pull/1344) [`57a19374`](https://github.com/wevm/wagmi/commit/57a1937464a4ccf72719fc86c38d1734f6306652) Thanks [@jxom](https://github.com/jxom)! - **Breaking**: With the introduction of the [`basin-hooks/chains` entrypoint](/core/chains), `basin-hooks` no longer exports the following:
 
   - `chain`
   - `allChains`
@@ -1392,14 +1392,14 @@
 
   #### Removed `chain`
 
-  The `chain` export has been removed. `@wagmi/core` now only exports the `mainnet` & `goerli` chains. If you need to use an alternative chain (`polygon`, `optimism`, etc), you will need to import it from the [`@wagmi/core/chains` entrypoint](/core/chains).
+  The `chain` export has been removed. `basin-hooks` now only exports the `mainnet` & `goerli` chains. If you need to use an alternative chain (`polygon`, `optimism`, etc), you will need to import it from the [`basin-hooks/chains` entrypoint](/core/chains).
 
   ```diff
   import {
   - chain
     configureChains
-  } from '@wagmi/core'
-  + import { mainnet, polygon, optimism } from '@wagmi/core/chains'
+  } from 'basin-hooks'
+  + import { mainnet, polygon, optimism } from 'basin-hooks/chains'
 
   const { ... } = configureChains(
   - [chain.mainnet, chain.polygon, chain.optimism],
@@ -1412,11 +1412,11 @@
 
   #### Removed `allChains`
 
-  The `allChains` export has been removed. If you need a list of all chains, you can utilize [`@wagmi/core/chains` entrypoint](/core/chains).
+  The `allChains` export has been removed. If you need a list of all chains, you can utilize [`basin-hooks/chains` entrypoint](/core/chains).
 
   ```diff
-  - import { allChains } from '@wagmi/core'
-  + import * as allChains from '@wagmi/core/chains'
+  - import { allChains } from 'basin-hooks'
+  + import * as allChains from 'basin-hooks/chains'
 
   const { ... } = configureChains(allChains, ...)
   ```
@@ -1426,8 +1426,8 @@
   The `defaultChains` & `defaultL2Chains` exports have been removed. If you still need the `defaultChains` or `defaultL2Chains` exports, you can build them yourself:
 
   ```diff
-  - import { defaultChains } from '@wagmi/core'
-  + import { mainnet, goerli } from '@wagmi/core/chains'
+  - import { defaultChains } from 'basin-hooks'
+  + import { mainnet, goerli } from 'basin-hooks/chains'
 
   + const defaultChains = [mainnet, goerli]
   ```
@@ -1435,7 +1435,7 @@
   > The `defaultChains` export was previously populated with `mainnet` & `goerli`.
 
   ```diff
-  - import { defaultL2Chains } from '@wagmi/core'
+  - import { defaultL2Chains } from 'basin-hooks'
   + import {
   +   arbitrum,
   +   arbitrumGoerli,
@@ -1443,7 +1443,7 @@
   +   polygonMumbai,
   +   optimism,
   +   optimismGoerli
-  + } from '@wagmi/core/chains'
+  + } from 'basin-hooks/chains'
 
   + const defaultL2Chains = [
   +  arbitrum,
@@ -1462,8 +1462,8 @@
   The `chainId` export has been removed. You can extract a chain ID from the chain itself.
 
   ```diff
-  - import { chainId } from '@wagmi/core'
-  + import { mainnet, polygon, optimism } from '@wagmi/core/chains'
+  - import { chainId } from 'basin-hooks'
+  + import { mainnet, polygon, optimism } from 'basin-hooks/chains'
 
   -const mainnetChainId = chainId.mainnet
   -const polygonChainId = chainId.polygon
@@ -1478,8 +1478,8 @@
   The `etherscanBlockExplorers` export has been removed. You can extract a block explorer from the chain itself.
 
   ```diff
-  - import { etherscanBlockExplorers } from '@wagmi/core'
-  + import { mainnet, polygon, optimism } from '@wagmi/core/chains'
+  - import { etherscanBlockExplorers } from 'basin-hooks'
+  + import { mainnet, polygon, optimism } from 'basin-hooks/chains'
 
   -const mainnetEtherscanBlockExplorer = etherscanBlockExplorers.mainnet
   -const polygonEtherscanBlockExplorer = etherscanBlockExplorers.polygon
@@ -1494,8 +1494,8 @@
   The `alchemyRpcUrls`, `infuraRpcUrls` & `publicRpcUrls` exports have been removed. You can extract a RPC URL from the chain itself.
 
   ```diff
-  - import { alchemyRpcUrls, infuraRpcUrls, publicRpcUrls } from '@wagmi/core'
-  + import { mainnet } from '@wagmi/core/chains'
+  - import { alchemyRpcUrls, infuraRpcUrls, publicRpcUrls } from 'basin-hooks'
+  + import { mainnet } from 'basin-hooks/chains'
 
   -const mainnetAlchemyRpcUrl = alchemyRpcUrls.mainnet
   -const mainnetInfuraRpcUrl = infuraRpcUrls.mainnet
@@ -1530,7 +1530,7 @@
 - [#1406](https://github.com/wevm/wagmi/pull/1406) [`4f18c450`](https://github.com/wevm/wagmi/commit/4f18c450a4d7952bfcfa6c533348ffbe55893d3c) Thanks [@tmm](https://github.com/tmm)! - Function for selecting the [EIP-1193](https://eips.ethereum.org/EIPS/eip-1193) Ethereum Provider to target. Defaults to `() => typeof window !== 'undefined' ? window.ethereum : undefined`.
 
   ```ts
-  import { InjectedConnector } from "@wagmi/core/connectors/injected";
+  import { InjectedConnector } from "basin-hooks/connectors/injected";
 
   const connector = new InjectedConnector({
     options: {
@@ -1756,7 +1756,7 @@
 - [#940](https://github.com/wevm/wagmi/pull/940) [`b6cb8f4`](https://github.com/wevm/wagmi/commit/b6cb8f4cd15eb13073bc7e9ecb4bfa2c261c0663) Thanks [@jxom](https://github.com/jxom)! - **Breaking**: `watchSigner` now requires an arguments object (that accepts an optional `chainId`) as it's first parameter.
 
   ```diff
-  import { watchSigner } from `@wagmi/core`
+  import { watchSigner } from `basin-hooks`
 
   -watchSigner(signer => {
   +watchSigner({}, signer => {
@@ -1769,7 +1769,7 @@
 - [#941](https://github.com/wevm/wagmi/pull/941) [`0c96009`](https://github.com/wevm/wagmi/commit/0c96009398647a515a57f72ef25c32724f7c978c) Thanks [@tmm](https://github.com/tmm)! - **Breaking**: `addressOrName` and `contractInterface` renamed to `address` and `abi` respectively for contract actions: `getContract`, `multicall`, `prepareWriteContract`, `readContract`, `readContracts`, `watchContractEvent`, `watchMulticall`, `watchReadContract`, `watchReadContracts`, `writeContract`.
 
   ```diff
-  import { readContract } from '@wagmi/core'
+  import { readContract } from 'basin-hooks'
 
   const result = await readContract({
   - addressOrName: '0x…',
@@ -1784,8 +1784,8 @@
   If you were using an ENS name instead of an address, you can resolve the name to an address before passing it to the action.
 
   ```diff
-  - import { readContract } from '@wagmi/core'
-  + import { fetchEnsAddress, readContract } from '@wagmi/core'
+  - import { readContract } from 'basin-hooks'
+  + import { fetchEnsAddress, readContract } from 'basin-hooks'
 
   + const address = await fetchEnsAddress('example.eth')
   const result = await readContract({
@@ -1808,7 +1808,7 @@
 - [#941](https://github.com/wevm/wagmi/pull/941) [`0c96009`](https://github.com/wevm/wagmi/commit/0c96009398647a515a57f72ef25c32724f7c978c) Thanks [@tmm](https://github.com/tmm)! - **Breaking**: `args` config option must now be an array for the following actions: `readContract`, `writeContract`, `prepareWriteContract`, `multicall`, `readContracts`, `watchMulticall`, and `watchReadContracts`.
 
   ```diff
-  import { readContract } from '@wagmi/core'
+  import { readContract } from 'basin-hooks'
 
   const result = await readContract({
     address: '0x…',
@@ -1822,7 +1822,7 @@
 - [#941](https://github.com/wevm/wagmi/pull/941) [`0c96009`](https://github.com/wevm/wagmi/commit/0c96009398647a515a57f72ef25c32724f7c978c) Thanks [@tmm](https://github.com/tmm)! - **Breaking**: `watchContractEvent` now accepts a configuration object and callback instead of positional arguments.
 
   ```diff
-  import { watchContractEvent } from '@wagmi/core'
+  import { watchContractEvent } from 'basin-hooks'
 
   - const unsubscribe = watchContractEvent(
   -   {
@@ -1850,7 +1850,7 @@
 
 - [#941](https://github.com/wevm/wagmi/pull/941) [`0c96009`](https://github.com/wevm/wagmi/commit/0c96009398647a515a57f72ef25c32724f7c978c) Thanks [@tmm](https://github.com/tmm)! - **Breaking**: Updated TypeScript version to `typescript@>=4.7.4`.
 
-  `@wagmi/core` can now infer types based on [ABI](https://docs.soliditylang.org/en/v0.8.15/abi-spec.html#json) and [EIP-712](https://eips.ethereum.org/EIPS/eip-712) Typed Data definitions, giving you full end-to-end type-safety from your contracts to your frontend and incredible developer experience (e.g. autocomplete contract function names and catch misspellings, type contract function arguments, etc.).
+  `basin-hooks` can now infer types based on [ABI](https://docs.soliditylang.org/en/v0.8.15/abi-spec.html#json) and [EIP-712](https://eips.ethereum.org/EIPS/eip-712) Typed Data definitions, giving you full end-to-end type-safety from your contracts to your frontend and incredible developer experience (e.g. autocomplete contract function names and catch misspellings, type contract function arguments, etc.).
 
   For this to work, you must upgrade to `typescript@>=4.7.4`. Why is TypeScript v4.7.4 or greater necessary? TypeScript 4.7.4 introduced the ability to [extend constraints on inferred type variables](https://devblogs.microsoft.com/typescript/announcing-typescript-4-7/#extends-constraints-on-infer-type-variables), which is used extensively to help narrow types for ABIs. Good news! When upgrading TypeScript from 4.6 to 4.7 there are likely no [breaking changes](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-4-7.html#breaking-changes) for your set up.
 
@@ -1859,7 +1859,7 @@
   Adding a [const assertion](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-4.html#const-assertions) to `abi` allows TypeScript to infer `functionName`, `args`, `overrides`, and return types for functions, and `eventName` and `listener` types for events.
 
   ```diff
-  import { readContract } from '@wagmi/core'
+  import { readContract } from 'basin-hooks'
 
   const result = await readContract({
     address: '0x…',
@@ -1876,7 +1876,7 @@
   Adding a [const assertion](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-4.html#const-assertions) to `signTypedData`'s config option, `types`, allows TypeScript to infer `value`.
 
   ```diff
-  import { signTypedData } from '@wagmi/core'
+  import { signTypedData } from 'basin-hooks'
 
   const result = await signTypedData({
     domain: {
@@ -1918,8 +1918,8 @@
 - [#940](https://github.com/wevm/wagmi/pull/940) [`b6cb8f4`](https://github.com/wevm/wagmi/commit/b6cb8f4cd15eb13073bc7e9ecb4bfa2c261c0663) Thanks [@jxom](https://github.com/jxom)! - The `fetchSigner` action now accepts an optional `chainId` to use for signer initialization as an argument.
 
   ```tsx
-  import { fetchSigner } from "@wagmi/core";
-  import { optimism } from "@wagmi/core/chains";
+  import { fetchSigner } from "basin-hooks";
+  import { optimism } from "basin-hooks/chains";
 
   // ...
 
@@ -2064,7 +2064,7 @@
   ### Prepared usage
 
   ```diff
-  import { prepareSendTransaction, sendTransaction } from '@wagmi/core'
+  import { prepareSendTransaction, sendTransaction } from 'basin-hooks'
 
   +const config = await prepareSendTransaction({
   +  request: {
@@ -2087,7 +2087,7 @@
   It is possible to use `sendTransaction` without preparing the configuration first by passing `mode: 'recklesslyUnprepared'`.
 
   ```diff
-  import { sendTransaction } from '@wagmi/core'
+  import { sendTransaction } from 'basin-hooks'
 
   const result = await sendTransaction({
   + mode: 'recklesslyUnprepared',
@@ -2101,8 +2101,8 @@
 * [#760](https://github.com/wevm/wagmi/pull/760) [`d8af6bf`](https://github.com/wevm/wagmi/commit/d8af6bf50885aec110ae4d64716642453aa27896) Thanks [@tmm](https://github.com/tmm)! - **Breaking:** `alchemyProvider` and `infuraProvider` now use a generic `apiKey` configuration option instead of `alchemyId` and `infuraId`.
 
   ```diff
-  import { alchemyProvider } from '@wagmi/core/providers/alchemy'
-  import { infuraProvider } from '@wagmi/core/providers/infura'
+  import { alchemyProvider } from 'basin-hooks/providers/alchemy'
+  import { infuraProvider } from 'basin-hooks/providers/infura'
 
   alchemyProvider({
   -  alchemyId: 'yourAlchemyApiKey',
@@ -2135,7 +2135,7 @@
   If you require the full `TransactionResponse`, you can use `fetchTransaction`:
 
   ```diff
-  import { sendTransaction, fetchTransaction } from '@wagmi/core'
+  import { sendTransaction, fetchTransaction } from 'basin-hooks'
 
   const {
     hash,
@@ -2167,7 +2167,7 @@
   ### Prepared usage
 
   ```diff
-  import { prepareWriteContract, writeContract } from '@wagmi/core'
+  import { prepareWriteContract, writeContract } from 'basin-hooks'
 
   const tokenId = 69
 
@@ -2192,7 +2192,7 @@
   It is possible to use `writeContract` without preparing the configuration first by passing `mode: 'recklesslyUnprepared'`.
 
   ```diff
-  import { writeContract } from '@wagmi/core'
+  import { writeContract } from 'basin-hooks'
 
   const tokenId = 69
 
@@ -2210,7 +2210,7 @@
   It returns config to be passed through to `sendTransaction`.
 
   ```ts
-  import { prepareSendTransaction, sendTransaction } from "@wagmi/core";
+  import { prepareSendTransaction, sendTransaction } from "basin-hooks";
 
   const config = await prepareSendTransaction({
     request: {
@@ -2228,7 +2228,7 @@
   Example:
 
   ```tsx
-  import { prepareWriteContract, writeContract } from "@wagmi/core";
+  import { prepareWriteContract, writeContract } from "basin-hooks";
 
   const config = await prepareWriteContract({
     addressOrName: "0x...",
@@ -2243,7 +2243,7 @@
 - [#759](https://github.com/wevm/wagmi/pull/759) [`959953d`](https://github.com/wevm/wagmi/commit/959953d1f5b3e8189bac56de245c62333470d18e) Thanks [@tmm](https://github.com/tmm)! - Added `fetchTransaction` action:
 
   ```ts
-  import { fetchTransaction } from "@wagmi/core";
+  import { fetchTransaction } from "basin-hooks";
 
   const transaction = await fetchTransaction({
     hash: "0x5c504ed432cb51138bcf09aa5e8a410dd4a1e204ef84bfed1be16dfba1b22060",
@@ -2268,7 +2268,7 @@
 
 ### Patch Changes
 
-- [#677](https://github.com/tmm/wagmi/pull/677) [`35e4219`](https://github.com/tmm/wagmi/commit/35e42199af9dd346549c1718e144728f55b8d7dd) Thanks [@jxom](https://github.com/jxom)! - Move `parseContractResult` to `@wagmi/core`
+- [#677](https://github.com/tmm/wagmi/pull/677) [`35e4219`](https://github.com/tmm/wagmi/commit/35e42199af9dd346549c1718e144728f55b8d7dd) Thanks [@jxom](https://github.com/jxom)! - Move `parseContractResult` to `basin-hooks`
 
 ## 0.4.6
 
@@ -2536,7 +2536,7 @@
   Example:
 
   ```tsx
-  import { connect } from "@wagmi/core";
+  import { connect } from "basin-hooks";
 
   await connect({ chainId: 69 });
   ```
@@ -2853,7 +2853,7 @@
 
 - [#311](https://github.com/tmm/wagmi/pull/311) [`24ce011`](https://github.com/tmm/wagmi/commit/24ce0113022b890e9582c6cc24035926e0d2b32d) Thanks [@tmm](https://github.com/tmm)! - don't persist account data when `autoConnect` is falsy
 
-* [#311](https://github.com/tmm/wagmi/pull/311) [`24ce011`](https://github.com/tmm/wagmi/commit/24ce0113022b890e9582c6cc24035926e0d2b32d) Thanks [@tmm](https://github.com/tmm)! - - fix(@wagmi/core): persist connector chains to local storage
+* [#311](https://github.com/tmm/wagmi/pull/311) [`24ce011`](https://github.com/tmm/wagmi/commit/24ce0113022b890e9582c6cc24035926e0d2b32d) Thanks [@tmm](https://github.com/tmm)! - - fix(basin-hooks): persist connector chains to local storage
 
 - [#311](https://github.com/tmm/wagmi/pull/311) [`24ce011`](https://github.com/tmm/wagmi/commit/24ce0113022b890e9582c6cc24035926e0d2b32d) Thanks [@tmm](https://github.com/tmm)! - - Favour `message` event over `connecting` event to conform to EIP-1193
   - Export `useWaitForTransaction`

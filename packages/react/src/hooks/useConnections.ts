@@ -4,7 +4,7 @@ import {
   type GetConnectionsReturnType,
   getConnections,
   watchConnections,
-} from '@wagmi/core'
+} from 'basin-hooks'
 import { useSyncExternalStore } from 'react'
 
 import type { ConfigParameter } from '../types/properties.js'

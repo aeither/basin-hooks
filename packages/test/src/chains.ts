@@ -1,4 +1,4 @@
-import type { Compute } from '@wagmi/core/internal'
+import type { Compute } from 'basin-hooks/internal'
 import {
   type Chain as viem_Chain,
   mainnet as viem_mainnet,

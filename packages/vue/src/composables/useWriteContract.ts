@@ -3,14 +3,14 @@ import type {
   Config,
   ResolvedRegister,
   WriteContractErrorType,
-} from '@wagmi/core'
+} from 'basin-hooks'
 import {
   type WriteContractData,
   type WriteContractMutate,
   type WriteContractMutateAsync,
   type WriteContractVariables,
   writeContractMutationOptions,
-} from '@wagmi/core/query'
+} from 'basin-hooks/query'
 import type { Abi } from 'viem'
 
 import type { ConfigParameter } from '../types/properties.js'

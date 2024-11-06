@@ -32,7 +32,7 @@
     "test": "vitest",
     "test:build": "bun scripts/generateProxyPackages.ts && pnpm run --r --parallel test:build",
     "test:cli": "vitest --project @wagmi/cli",
-    "test:core": "vitest --project @wagmi/core",
+    "test:core": "vitest --project basin-hooks",
     "test:create-wagmi": "vitest --project create-wagmi",
     "test:cov": "vitest run --coverage",
     "test:react": "vitest --project wagmi",

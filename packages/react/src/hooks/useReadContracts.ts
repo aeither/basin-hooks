@@ -4,8 +4,8 @@ import type {
   Config,
   ReadContractsErrorType,
   ResolvedRegister,
-} from '@wagmi/core'
-import type { Compute } from '@wagmi/core/internal'
+} from 'basin-hooks'
+import type { Compute } from 'basin-hooks/internal'
 import {
   type ReadContractsData,
   type ReadContractsOptions,
@@ -13,7 +13,7 @@ import {
   type ReadContractsQueryKey,
   readContractsQueryOptions,
   structuralSharing,
-} from '@wagmi/core/query'
+} from 'basin-hooks/query'
 import { useMemo } from 'react'
 import type { ContractFunctionParameters } from 'viem'
 

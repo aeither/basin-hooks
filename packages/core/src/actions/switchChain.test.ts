@@ -58,7 +58,7 @@ test('behavior: not supported', async () => {
   ).rejects.toMatchInlineSnapshot(`
     [SwitchChainNotSupportedError: "Mock Connector" does not support programmatic chain switching.
 
-    Version: @wagmi/core@x.y.z]
+    Version: basin-hooks@x.y.z]
   `)
   await disconnect(config, { connector: connector_ })
 })

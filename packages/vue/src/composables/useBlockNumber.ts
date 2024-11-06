@@ -3,19 +3,19 @@ import type {
   Config,
   GetBlockNumberErrorType,
   ResolvedRegister,
-} from '@wagmi/core'
+} from 'basin-hooks'
 import type {
   Compute,
   UnionCompute,
   UnionStrictOmit,
-} from '@wagmi/core/internal'
+} from 'basin-hooks/internal'
 import {
   type GetBlockNumberData,
   type GetBlockNumberOptions,
   type GetBlockNumberQueryFnData,
   type GetBlockNumberQueryKey,
   getBlockNumberQueryOptions,
-} from '@wagmi/core/query'
+} from 'basin-hooks/query'
 import { computed } from 'vue'
 
 import type { ConfigParameter, QueryParameter } from '../types/properties.js'

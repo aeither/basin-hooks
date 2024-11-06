@@ -3,8 +3,8 @@ import {
   type ResolvedRegister,
   type WatchBlockNumberParameters,
   watchBlockNumber,
-} from '@wagmi/core'
-import type { UnionCompute, UnionExactPartial } from '@wagmi/core/internal'
+} from 'basin-hooks'
+import type { UnionCompute, UnionExactPartial } from 'basin-hooks/internal'
 import { computed, watchEffect } from 'vue'
 
 import type { ConfigParameter, EnabledParameter } from '../types/properties.js'

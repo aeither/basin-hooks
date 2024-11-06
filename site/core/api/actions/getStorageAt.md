@@ -1,5 +1,5 @@
 <script setup>
-const packageName = '@wagmi/core'
+const packageName = 'basin-hooks'
 const actionName = 'getStorageAt'
 const typeName = 'getStorageAt'
 </script>
@@ -11,14 +11,14 @@ Action for returning the value from a storage slot at a given address.
 ## Import
 
 ```ts
-import { getStorageAt } from '@wagmi/core'
+import { getStorageAt } from 'basin-hooks'
 ```
 
 ## Usage
 
 ::: code-group
 ```ts [index.ts]
-import { getStorageAt } from '@wagmi/core'
+import { getStorageAt } from 'basin-hooks'
 import { config } from './config'
 
 await getStorageAt(config, {
@@ -32,7 +32,7 @@ await getStorageAt(config, {
 ## Parameters
 
 ```ts
-import { type GetStorageAtParameters } from '@wagmi/core'
+import { type GetStorageAtParameters } from 'basin-hooks'
 ```
 
 ### address
@@ -43,7 +43,7 @@ The contract address.
 
 ::: code-group
 ```ts [index.ts]
-import { getStorageAt } from '@wagmi/core'
+import { getStorageAt } from 'basin-hooks'
 import { config } from './config'
 
 await getStorageAt(config, {
@@ -62,7 +62,7 @@ The storage position (as a hex encoded value).
 
 ::: code-group
 ```ts [index.ts]
-import { getStorageAt } from '@wagmi/core'
+import { getStorageAt } from 'basin-hooks'
 import { config } from './config'
 
 await getStorageAt(config, {
@@ -81,7 +81,7 @@ The block number to check the storage at.
 
 ::: code-group
 ```ts [index.ts]
-import { getStorageAt } from '@wagmi/core'
+import { getStorageAt } from 'basin-hooks'
 import { config } from './config'
 
 await getStorageAt(config, {
@@ -101,7 +101,7 @@ The block tag to check the storage at.
 
 ::: code-group
 ```ts [index.ts]
-import { getStorageAt } from '@wagmi/core'
+import { getStorageAt } from 'basin-hooks'
 import { config } from './config'
 
 await getStorageAt(config, {
@@ -121,8 +121,8 @@ The chain ID to check the storage at.
 
 ::: code-group
 ```ts [index.ts]
-import { getStorageAt } from '@wagmi/core'
-import { mainnet } from '@wagmi/core/chains'
+import { getStorageAt } from 'basin-hooks'
+import { mainnet } from 'basin-hooks/chains'
 import { config } from './config'
 
 await getStorageAt(config, {
@@ -137,7 +137,7 @@ await getStorageAt(config, {
 ## Return Type
 
 ```ts
-import { type GetStorageAtReturnType } from '@wagmi/core'
+import { type GetStorageAtReturnType } from 'basin-hooks'
 ```
 
 `Hex`
@@ -147,7 +147,7 @@ The value of the storage slot.
 ## Error
 
 ```ts
-import { type GetStorageAtErrorType } from '@wagmi/core'
+import { type GetStorageAtErrorType } from 'basin-hooks'
 ```
 
 <!--@include: @shared/query-imports.md-->

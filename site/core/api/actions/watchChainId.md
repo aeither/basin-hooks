@@ -5,14 +5,14 @@ Subscribe to chain ID changes.
 ## Import
 
 ```ts
-import { watchChainId } from '@wagmi/core'
+import { watchChainId } from 'basin-hooks'
 ```
 
 ## Usage
 
 ::: code-group
 ```ts [index.ts]
-import { watchChainId } from '@wagmi/core'
+import { watchChainId } from 'basin-hooks'
 import { config } from './config'
 
 const unwatch = watchChainId(config, {
@@ -28,7 +28,7 @@ unwatch()
 ## Parameters
 
 ```ts
-import { type WatchChainIdParameters } from '@wagmi/core'
+import { type WatchChainIdParameters } from 'basin-hooks'
 ```
 
 ### onChange
@@ -39,7 +39,7 @@ Callback function called when chain ID changes.
 
 ::: code-group
 ```ts [index.ts]
-import { watchChainId } from '@wagmi/core'
+import { watchChainId } from 'basin-hooks'
 import { config } from './config'
 
 const unwatch = watchChainId(config, {
@@ -55,7 +55,7 @@ unwatch()
 ## Return Type
 
 ```ts
-import { type WatchChainIdReturnType } from '@wagmi/core'
+import { type WatchChainIdReturnType } from 'basin-hooks'
 ```
 
 Function for cleaning up watcher.

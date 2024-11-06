@@ -1,23 +1,23 @@
 // biome-ignore lint/performance/noBarrelFile: entrypoint module
 export {
-  type InjectedParameters,
   injected,
-  type MockParameters,
   mock,
-} from '@wagmi/core'
+  type InjectedParameters,
+  type MockParameters,
+} from 'basin-hooks'
 
 export {
-  type CoinbaseWalletParameters,
   coinbaseWallet,
+  type CoinbaseWalletParameters,
 } from '../coinbaseWallet.js'
 
-export { type MetaMaskParameters, metaMask } from '../metaMask.js'
+export { metaMask, type MetaMaskParameters } from '../metaMask.js'
 
-export { type SafeParameters, safe } from '../safe.js'
+export { safe, type SafeParameters } from '../safe.js'
 
 export {
-  type WalletConnectParameters,
   walletConnect,
+  type WalletConnectParameters,
 } from '../walletConnect.js'
 
 export { version } from '../version.js'

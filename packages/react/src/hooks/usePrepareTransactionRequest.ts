@@ -5,14 +5,14 @@ import type {
   PrepareTransactionRequestErrorType,
   ResolvedRegister,
   SelectChains,
-} from '@wagmi/core'
+} from 'basin-hooks'
+import type { PrepareTransactionRequestQueryFnData } from 'basin-hooks/query'
 import {
   type PrepareTransactionRequestData,
   type PrepareTransactionRequestOptions,
   type PrepareTransactionRequestQueryKey,
   prepareTransactionRequestQueryOptions,
-} from '@wagmi/core/query'
-import type { PrepareTransactionRequestQueryFnData } from '@wagmi/core/query'
+} from 'basin-hooks/query'
 import type { PrepareTransactionRequestRequest as viem_PrepareTransactionRequestRequest } from 'viem'
 
 import type { ConfigParameter, QueryParameter } from '../types/properties.js'

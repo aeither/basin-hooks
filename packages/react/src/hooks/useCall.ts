@@ -1,14 +1,14 @@
 'use client'
 
-import type { CallErrorType, Config, ResolvedRegister } from '@wagmi/core'
-import type { Compute } from '@wagmi/core/internal'
+import type { CallErrorType, Config, ResolvedRegister } from 'basin-hooks'
+import type { Compute } from 'basin-hooks/internal'
+import type { CallQueryFnData } from 'basin-hooks/query'
 import {
   type CallData,
   type CallOptions,
   type CallQueryKey,
   callQueryOptions,
-} from '@wagmi/core/query'
-import type { CallQueryFnData } from '@wagmi/core/query'
+} from 'basin-hooks/query'
 
 import type { ConfigParameter, QueryParameter } from '../types/properties.js'
 import { type UseQueryReturnType, useQuery } from '../utils/query.js'

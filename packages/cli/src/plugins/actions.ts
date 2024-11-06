@@ -13,7 +13,7 @@ export type ActionsConfig = {
         itemName?: string | undefined
         type: 'read' | 'simulate' | 'watch' | 'write'
       }) => string)
-  overridePackageName?: '@wagmi/core' | 'wagmi' | undefined
+  overridePackageName?: 'basin-hooks' | 'wagmi' | undefined
 }
 
 type ActionsResult = Compute<RequiredBy<Plugin, 'run'>>
@@ -241,11 +241,11 @@ export const ${actionName} = ${pure} ${functionName}({ ${innerContent}, eventNam
 
       const importValues = [...imports.values()]
 
-      let packageName = '@wagmi/core/codegen'
+      let packageName = 'basin-hooks/codegen'
       if (config.overridePackageName) {
         switch (config.overridePackageName) {
-          case '@wagmi/core':
-            packageName = '@wagmi/core/codegen'
+          case 'basin-hooks':
+            packageName = 'basin-hooks/codegen'
             break
           case 'wagmi':
             packageName = 'wagmi/codegen'
@@ -253,8 +253,8 @@ export const ${actionName} = ${pure} ${functionName}({ ${innerContent}, eventNam
         }
       } else if (await getIsPackageInstalled({ packageName: 'wagmi' }))
         packageName = 'wagmi/codegen'
-      else if (await getIsPackageInstalled({ packageName: '@wagmi/core' }))
-        packageName = '@wagmi/core/codegen'
+      else if (await getIsPackageInstalled({ packageName: 'basin-hooks' }))
+        packageName = 'basin-hooks/codegen'
 
       return {
         imports: importValues.length

@@ -1,6 +1,6 @@
-import { connect, disconnect } from '@wagmi/core'
 import { config, wait } from '@wagmi/test'
 import { renderComposable, waitFor } from '@wagmi/test/vue'
+import { connect, disconnect } from 'basin-hooks'
 import { expect, test } from 'vitest'
 
 import { deepUnref } from '../utils/cloneDeep.js'

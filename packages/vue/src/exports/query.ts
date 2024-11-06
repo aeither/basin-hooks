@@ -1,19 +1,19 @@
 ////////////////////////////////////////////////////////////////////////////////
-// @wagmi/core/query
+// basin-hooks/query
 ////////////////////////////////////////////////////////////////////////////////
 
 // biome-ignore lint/performance/noBarrelFile: entrypoint module
 // biome-ignore lint/performance/noReExportAll: entrypoint module
-export * from '@wagmi/core/query'
+export * from 'basin-hooks/query'
 
 export {
+  useMutation,
   type UseMutationParameters,
   type UseMutationReturnType,
-  useMutation,
 } from '../utils/query.js'
 
 export {
+  useQuery,
   type UseQueryParameters,
   type UseQueryReturnType,
-  useQuery,
 } from '../utils/query.js'

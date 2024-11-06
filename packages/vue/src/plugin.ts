@@ -1,4 +1,4 @@
-import { type ResolvedRegister, type State, hydrate } from '@wagmi/core'
+import { type ResolvedRegister, type State, hydrate } from 'basin-hooks'
 import type { Plugin } from 'vue'
 
 export const configKey = Symbol()

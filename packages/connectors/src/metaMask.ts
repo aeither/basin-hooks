@@ -9,14 +9,14 @@ import {
   type Connector,
   createConnector,
   extractRpcUrls,
-} from '@wagmi/core'
+} from 'basin-hooks'
 import type {
   Compute,
   ExactPartial,
   OneOf,
   RemoveUndefined,
   UnionCompute,
-} from '@wagmi/core/internal'
+} from 'basin-hooks/internal'
 import {
   type AddEthereumChainParameter,
   type Address,

@@ -89,7 +89,7 @@
   },
   "dependencies": {
     "@wagmi/connectors": "workspace:*",
-    "@wagmi/core": "workspace:*"
+    "basin-hooks": "workspace:*"
   },
   "devDependencies": {
     "@nuxt/schema": "^3.11.2",

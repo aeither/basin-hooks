@@ -3,18 +3,18 @@ import type {
   ReadContractErrorType,
   ReadContractParameters,
   ResolvedRegister,
-} from '@wagmi/core'
+} from 'basin-hooks'
 import type {
   ScopeKeyParameter,
   UnionCompute,
   UnionExactPartial,
   UnionStrictOmit,
-} from '@wagmi/core/internal'
+} from 'basin-hooks/internal'
 import type {
   ReadContractData,
   ReadContractQueryFnData,
   ReadContractQueryKey,
-} from '@wagmi/core/query'
+} from 'basin-hooks/query'
 import type {
   Abi,
   Address,

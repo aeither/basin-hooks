@@ -1,14 +1,14 @@
 'use client'
 
-import type { Config, GetProofErrorType, ResolvedRegister } from '@wagmi/core'
-import type { Compute } from '@wagmi/core/internal'
+import type { Config, GetProofErrorType, ResolvedRegister } from 'basin-hooks'
+import type { Compute } from 'basin-hooks/internal'
+import type { GetProofQueryFnData } from 'basin-hooks/query'
 import {
   type GetProofData,
   type GetProofOptions,
   type GetProofQueryKey,
   getProofQueryOptions,
-} from '@wagmi/core/query'
-import type { GetProofQueryFnData } from '@wagmi/core/query'
+} from 'basin-hooks/query'
 
 import type { ConfigParameter, QueryParameter } from '../types/properties.js'
 import { type UseQueryReturnType, useQuery } from '../utils/query.js'

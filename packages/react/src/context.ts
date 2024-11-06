@@ -1,6 +1,6 @@
 'use client'
 
-import type { ResolvedRegister, State } from '@wagmi/core'
+import type { ResolvedRegister, State } from 'basin-hooks'
 import { createContext, createElement } from 'react'
 import { Hydrate } from './hydrate.js'
 

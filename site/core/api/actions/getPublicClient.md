@@ -5,14 +5,14 @@ Action for getting Viem [`PublicClient`](https://viem.sh/docs/clients/public.htm
 ## Import
 
 ```ts
-import { getPublicClient } from '@wagmi/core'
+import { getPublicClient } from 'basin-hooks'
 ```
 
 ## Usage
 
 ::: code-group
 ```ts [index.ts]
-import { getPublicClient } from '@wagmi/core'
+import { getPublicClient } from 'basin-hooks'
 import { config } from './config'
 
 const client = getPublicClient(config)
@@ -27,7 +27,7 @@ If you want to optimize bundle size, you should use [`getClient`](/core/api/acti
 ## Parameters
 
 ```ts
-import { type GetClientParameters } from '@wagmi/core'
+import { type GetClientParameters } from 'basin-hooks'
 ```
 
 ### chainId
@@ -38,8 +38,8 @@ ID of chain to use when getting Viem Public Client.
 
 ::: code-group
 ```ts [index.ts]
-import { getPublicClient } from '@wagmi/core'
-import { mainnet } from '@wagmi/core/chains'
+import { getPublicClient } from 'basin-hooks'
+import { mainnet } from 'basin-hooks/chains'
 import { config } from './config'
 
 const client = getPublicClient(config, {
@@ -52,7 +52,7 @@ const client = getPublicClient(config, {
 ## Return Type
 
 ```ts
-import { type GetPublicClientReturnType } from '@wagmi/core'
+import { type GetPublicClientReturnType } from 'basin-hooks'
 ```
 
 `PublicClient | undefined`

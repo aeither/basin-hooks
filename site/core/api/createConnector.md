@@ -5,13 +5,13 @@ Creates new [`CreateConnectorFn`](#parameters).
 ## Import
 
 ```ts
-import { createConnector } from '@wagmi/core'
+import { createConnector } from 'basin-hooks'
 ```
 
 ## Usage
 
 ```ts
-import { createConnector } from '@wagmi/core'
+import { createConnector } from 'basin-hooks'
 
 export type InjectedParameters = {}
 
@@ -25,7 +25,7 @@ export function injected(parameters: InjectedParameters = {}) {
 ## Parameters
 
 ```ts
-import { type CreateConnectorFn } from '@wagmi/core'
+import { type CreateConnectorFn } from 'basin-hooks'
 ```
 
 Read [Creating Connectors](/dev/creating-connectors) for more info on the `CreateConnectorFn` type.

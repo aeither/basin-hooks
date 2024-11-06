@@ -3,12 +3,12 @@
 layout: home
 
 description: Type Safe, Extensible, and Modular by design. Build high-performance blockchain frontends.
-title: 'Wagmi | Reactivity for Ethereum apps'
+title: 'Wagmi | Reactivity for Babylon apps'
 titleTemplate: false
 
 hero:
   name: Wagmi
-  text: Reactivity for Ethereum apps
+  text: Reactivity for Babylon apps
   tagline: Type Safe, Extensible, and Modular by design. Build high-performance blockchain frontends.
   actions:
     - theme: brand

@@ -5,8 +5,8 @@ import {
   type ResolvedRegister,
   getClient,
   watchClient,
-} from '@wagmi/core'
-import type { Compute } from '@wagmi/core/internal'
+} from 'basin-hooks'
+import type { Compute } from 'basin-hooks/internal'
 import {
   type Ref,
   computed,

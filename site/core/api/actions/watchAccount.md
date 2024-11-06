@@ -5,14 +5,14 @@ Subscribe to account changes.
 ## Import
 
 ```ts
-import { watchAccount } from '@wagmi/core'
+import { watchAccount } from 'basin-hooks'
 ```
 
 ## Usage
 
 ::: code-group
 ```ts [index.ts]
-import { watchAccount } from '@wagmi/core'
+import { watchAccount } from 'basin-hooks'
 import { config } from './config'
 
 const unwatch = watchAccount(config, {
@@ -28,7 +28,7 @@ unwatch()
 ## Parameters
 
 ```ts
-import { type WatchAccountParameters } from '@wagmi/core'
+import { type WatchAccountParameters } from 'basin-hooks'
 ```
 
 ### onChange
@@ -39,7 +39,7 @@ Callback function called when account changes.
 
 ::: code-group
 ```ts [index.ts]
-import { watchAccount } from '@wagmi/core'
+import { watchAccount } from 'basin-hooks'
 import { config } from './config'
 
 const unwatch = watchAccount(config, {
@@ -55,7 +55,7 @@ unwatch()
 ## Return Type
 
 ```ts
-import { type WatchAccountReturnType } from '@wagmi/core'
+import { type WatchAccountReturnType } from 'basin-hooks'
 ```
 
 Function for cleaning up watcher.

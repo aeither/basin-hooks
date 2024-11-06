@@ -4,7 +4,7 @@ import Browsers from '../components/Browsers.vue'
 
 const docsPath = 'core'
 const packageDir = 'core'
-const packageName = '@wagmi/core'
+const packageName = 'basin-hooks'
 const viemVersion = packageJson.peerDependencies.viem
 </script>
 
@@ -18,19 +18,19 @@ Install the required packages.
 
 ::: code-group
 ```bash-vue [pnpm]
-pnpm add @wagmi/core viem@{{viemVersion}}
+pnpm add basin-hooks viem@{{viemVersion}}
 ```
 
 ```bash-vue [npm]
-npm install @wagmi/core viem@{{viemVersion}}
+npm install basin-hooks viem@{{viemVersion}}
 ```
 
 ```bash-vue [yarn]
-yarn add @wagmi/core viem@{{viemVersion}}
+yarn add basin-hooks viem@{{viemVersion}}
 ```
 
 ```bash-vue [bun]
-bun add @wagmi/core viem@{{viemVersion}}
+bun add basin-hooks viem@{{viemVersion}}
 ```
 :::
 
@@ -44,7 +44,7 @@ If you're not using a package manager, you can also use Wagmi Core via an ESM-co
 ```html-vue
 <script type="module">
   import { createClient } from 'https://esm.sh/viem'
-  import { createConfig } from 'https://esm.sh/@wagmi/core@{{viemVersion}}'
+  import { createConfig } from 'https://esm.sh/basin-hooks@{{viemVersion}}'
   import { injected } from 'https://esm.sh/@wagmi/connectors'
 </script>
 ```

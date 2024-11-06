@@ -6,7 +6,7 @@ const alias = {
     __dirname,
     './packages/connectors/src/exports',
   ),
-  '@wagmi/core': path.resolve(__dirname, './packages/core/src/exports'),
+  'basin-hooks': path.resolve(__dirname, './packages/core/src/exports'),
   '@wagmi/test': path.resolve(__dirname, './packages/test/src/exports'),
   '@wagmi/vue': path.resolve(__dirname, './packages/vue/src/exports'),
   wagmi: path.resolve(__dirname, './packages/react/src/exports'),
@@ -32,7 +32,7 @@ export default defineWorkspace([
   },
   {
     test: {
-      name: '@wagmi/core',
+      name: 'basin-hooks',
       include: ['./packages/core/src/**/*.test.ts'],
       environment: 'happy-dom',
       testTimeout: 10_000,

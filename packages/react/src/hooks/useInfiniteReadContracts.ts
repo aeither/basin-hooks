@@ -4,13 +4,13 @@ import type {
   Config,
   ReadContractsErrorType,
   ResolvedRegister,
-} from '@wagmi/core'
+} from 'basin-hooks'
 import {
   type InfiniteReadContractsQueryFnData,
   type InfiniteReadContractsQueryKey,
   infiniteReadContractsQueryOptions,
   structuralSharing,
-} from '@wagmi/core/query'
+} from 'basin-hooks/query'
 import type { ContractFunctionParameters } from 'viem'
 
 import type {

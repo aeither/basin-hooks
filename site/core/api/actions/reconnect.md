@@ -1,5 +1,5 @@
 <script setup>
-const packageName = '@wagmi/core'
+const packageName = 'basin-hooks'
 const actionName = 'reconnect'
 const typeName = 'Reconnect'
 </script>
@@ -11,14 +11,14 @@ Action for reconnecting [connectors](/core/api/connectors).
 ## Import
 
 ```ts
-import { reconnect } from '@wagmi/core'
+import { reconnect } from 'basin-hooks'
 ```
 
 ## Usage
 
 ::: code-group
 ```ts [index.ts]
-import { reconnect } from '@wagmi/core'
+import { reconnect } from 'basin-hooks'
 import { injected } from '@wagmi/connectors'
 import { config } from './config'
 
@@ -30,7 +30,7 @@ const result = await reconnect(config, { connectors: [injected()] })
 ## Parameters
 
 ```ts
-import { type ReconnectParameters } from '@wagmi/core'
+import { type ReconnectParameters } from 'basin-hooks'
 ```
 
 ### connectors
@@ -42,7 +42,7 @@ import { type ReconnectParameters } from '@wagmi/core'
 
 ::: code-group
 ```ts [index.ts]
-import { reconnect } from '@wagmi/core'
+import { reconnect } from 'basin-hooks'
 import { injected } from '@wagmi/connectors'
 import { config } from './config'
 
@@ -56,7 +56,7 @@ const result = await reconnect(config, {
 ## Return Type
 
 ```ts
-import { type ReconnectReturnType } from '@wagmi/core'
+import { type ReconnectReturnType } from 'basin-hooks'
 ```
 
 `Connection[]`
@@ -66,7 +66,7 @@ import { type ReconnectReturnType } from '@wagmi/core'
 ## Error
 
 ```ts
-import { type ReconnectErrorType } from '@wagmi/core'
+import { type ReconnectErrorType } from 'basin-hooks'
 ```
 
 <!--@include: @shared/mutation-imports.md-->

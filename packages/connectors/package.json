@@ -35,7 +35,7 @@
     "./package.json": "./package.json"
   },
   "peerDependencies": {
-    "@wagmi/core": "workspace:*",
+    "basin-hooks": "workspace:*",
     "typescript": ">=5.0.4",
     "viem": "2.x"
   },
@@ -53,7 +53,7 @@
     "cbw-sdk": "npm:@coinbase/wallet-sdk@3.9.3"
   },
   "devDependencies": {
-    "@wagmi/core": "workspace:*",
+    "basin-hooks": "workspace:*",
     "msw": "^2.4.9"
   },
   "contributors": ["awkweb.eth <t@wevm.dev>", "jxom.eth <j@wevm.dev>"],

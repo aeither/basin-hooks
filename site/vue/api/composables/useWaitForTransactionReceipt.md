@@ -39,7 +39,7 @@ const result = useWaitForTransactionReceipt({
 ## Parameters
 
 ```ts
-import { type WaitForTransactionReceiptParameters } from '@wagmi/core'
+import { type WaitForTransactionReceiptParameters } from 'basin-hooks'
 ```
 
 ### chainId

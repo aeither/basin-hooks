@@ -5,14 +5,14 @@ Action for getting Viem [`Client`](https://viem.sh/docs/clients/custom.html) ins
 ## Import
 
 ```ts
-import { getClient } from '@wagmi/core'
+import { getClient } from 'basin-hooks'
 ```
 
 ## Usage
 
 ::: code-group
 ```ts [index.ts]
-import { getClient } from '@wagmi/core'
+import { getClient } from 'basin-hooks'
 import { config } from './config'
 
 const client = getClient(config)
@@ -23,7 +23,7 @@ const client = getClient(config)
 ## Parameters
 
 ```ts
-import { type GetClientParameters } from '@wagmi/core'
+import { type GetClientParameters } from 'basin-hooks'
 ```
 
 ### chainId
@@ -34,8 +34,8 @@ ID of chain to use when getting Viem Client.
 
 ::: code-group
 ```ts [index.ts]
-import { getClient } from '@wagmi/core'
-import { mainnet } from '@wagmi/core/chains'
+import { getClient } from 'basin-hooks'
+import { mainnet } from 'basin-hooks/chains'
 import { config } from './config'
 
 const client = await getClient(config, {
@@ -48,7 +48,7 @@ const client = await getClient(config, {
 ## Return Type
 
 ```ts
-import { type GetClientReturnType } from '@wagmi/core'
+import { type GetClientReturnType } from 'basin-hooks'
 ```
 
 `Client`

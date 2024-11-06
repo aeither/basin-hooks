@@ -4,15 +4,15 @@ import type {
   Config,
   ResolvedRegister,
   VerifyMessageErrorType,
-} from '@wagmi/core'
-import type { Compute } from '@wagmi/core/internal'
+} from 'basin-hooks'
+import type { Compute } from 'basin-hooks/internal'
+import type { VerifyMessageQueryFnData } from 'basin-hooks/query'
 import {
   type VerifyMessageData,
   type VerifyMessageOptions,
   type VerifyMessageQueryKey,
   verifyMessageQueryOptions,
-} from '@wagmi/core/query'
-import type { VerifyMessageQueryFnData } from '@wagmi/core/query'
+} from 'basin-hooks/query'
 import type { ConfigParameter, QueryParameter } from '../types/properties.js'
 import { type UseQueryReturnType, useQuery } from '../utils/query.js'
 import { useChainId } from './useChainId.js'

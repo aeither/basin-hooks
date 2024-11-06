@@ -5,14 +5,14 @@ Action for getting configured connectors.
 ## Import
 
 ```ts
-import { getConnectors } from '@wagmi/core'
+import { getConnectors } from 'basin-hooks'
 ```
 
 ## Usage
 
 ::: code-group
 ```ts [index.ts]
-import { getConnectors } from '@wagmi/core'
+import { getConnectors } from 'basin-hooks'
 import { config } from './config'
 
 const connectors = getConnectors(config)
@@ -23,7 +23,7 @@ const connectors = getConnectors(config)
 ## Return Type
 
 ```ts
-import { type GetConnectorsReturnType } from '@wagmi/core'
+import { type GetConnectorsReturnType } from 'basin-hooks'
 ```
 
 `readonly Connector[]`

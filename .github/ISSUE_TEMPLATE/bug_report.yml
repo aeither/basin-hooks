@@ -48,7 +48,7 @@ body:
         - 'wagmi'
         - '@wagmi/cli'
         - '@wagmi/connectors'
-        - '@wagmi/core'
+        - 'basin-hooks'
         - '@wagmi/vue'
         - 'create-wagmi'
     validations:

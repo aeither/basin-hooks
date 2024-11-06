@@ -1,4 +1,3 @@
-import { connect, disconnect, getBalance, writeContract } from '@wagmi/core'
 import {
   abi,
   accounts,
@@ -9,7 +8,8 @@ import {
   wait,
 } from '@wagmi/test'
 import { renderHook } from '@wagmi/test/react'
-import { http, createWalletClient, parseEther } from 'viem'
+import { connect, disconnect, getBalance, writeContract } from 'basin-hooks'
+import { createWalletClient, http, parseEther } from 'viem'
 import type { WatchEventOnLogsParameter } from 'viem/actions'
 import { expect, test } from 'vitest'
 

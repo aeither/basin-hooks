@@ -1,9 +1,9 @@
+import { typedData } from '@wagmi/test'
 import type {
   SignTypedDataErrorType,
   SignTypedDataReturnType,
-} from '@wagmi/core'
-import type { SignTypedDataVariables } from '@wagmi/core/query'
-import { typedData } from '@wagmi/test'
+} from 'basin-hooks'
+import type { SignTypedDataVariables } from 'basin-hooks/query'
 import { expectTypeOf, test } from 'vitest'
 
 import { useSignTypedData } from './useSignTypedData.js'

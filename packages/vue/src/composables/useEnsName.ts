@@ -1,12 +1,12 @@
-import type { Config, GetEnsNameErrorType, ResolvedRegister } from '@wagmi/core'
-import type { Compute } from '@wagmi/core/internal'
+import type { Config, GetEnsNameErrorType, ResolvedRegister } from 'basin-hooks'
+import type { Compute } from 'basin-hooks/internal'
 import {
   type GetEnsNameData,
   type GetEnsNameOptions,
   type GetEnsNameQueryFnData,
   type GetEnsNameQueryKey,
   getEnsNameQueryOptions,
-} from '@wagmi/core/query'
+} from 'basin-hooks/query'
 
 import { computed } from 'vue'
 import type { ConfigParameter, QueryParameter } from '../types/properties.js'

@@ -1,6 +1,6 @@
-import { http, type WriteContractErrorType, createConfig } from '@wagmi/core'
-import { base } from '@wagmi/core/chains'
 import { abi } from '@wagmi/test'
+import { createConfig, http, type WriteContractErrorType } from 'basin-hooks'
+import { base } from 'basin-hooks/chains'
 import type { Abi, Address, Hash } from 'viem'
 import { expectTypeOf, test } from 'vitest'
 

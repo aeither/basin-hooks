@@ -1,5 +1,5 @@
 <script setup>
-const packageName = '@wagmi/core'
+const packageName = 'basin-hooks'
 const actionName = 'getFeeHistory'
 const typeName = 'GetFeeHistory'
 </script>
@@ -11,14 +11,14 @@ Action for fetching a collection of historical gas information.
 ## Import
 
 ```ts
-import { getFeeHistory } from '@wagmi/core'
+import { getFeeHistory } from 'basin-hooks'
 ```
 
 ## Usage
 
 ::: code-group
 ```ts [index.ts]
-import { getFeeHistory } from '@wagmi/core'
+import { getFeeHistory } from 'basin-hooks'
 import { config } from './config'
 
 const feeHistory = await getFeeHistory(config, {
@@ -32,7 +32,7 @@ const feeHistory = await getFeeHistory(config, {
 ## Parameters
 
 ```ts
-import { type GetFeeHistoryParameters } from '@wagmi/core'
+import { type GetFeeHistoryParameters } from 'basin-hooks'
 ```
 
 ### blockCount
@@ -43,7 +43,7 @@ Number of blocks in the requested range. Between 1 and 1024 blocks can be reques
 
 ::: code-group
 ```ts [index.ts]
-import { getFeeHistory } from '@wagmi/core'
+import { getFeeHistory } from 'basin-hooks'
 import { config } from './config'
 
 const feeHistory = await getFeeHistory(config, {
@@ -62,7 +62,7 @@ A monotonically increasing list of percentile values to sample from each block's
 
 ::: code-group
 ```ts [index.ts]
-import { getFeeHistory } from '@wagmi/core'
+import { getFeeHistory } from 'basin-hooks'
 import { config } from './config'
 
 const feeHistory = await getFeeHistory(config, {
@@ -81,7 +81,7 @@ Highest number block of the requested range.
 
 ::: code-group
 ```ts [index.ts]
-import { getFeeHistory } from '@wagmi/core'
+import { getFeeHistory } from 'basin-hooks'
 import { config } from './config'
 
 const feeHistory = await getFeeHistory(config, {
@@ -101,7 +101,7 @@ Block tag of the highest number block of the requested range.
 
 ::: code-group
 ```ts [index.ts]
-import { getFeeHistory } from '@wagmi/core'
+import { getFeeHistory } from 'basin-hooks'
 import { config } from './config'
 
 const feeHistory = await getFeeHistory(config, {
@@ -121,8 +121,8 @@ ID of chain to use when fetching data.
 
 ::: code-group
 ```ts [index.ts]
-import { getFeeHistory } from '@wagmi/core'
-import { mainnet } from '@wagmi/core/chains'
+import { getFeeHistory } from 'basin-hooks'
+import { mainnet } from 'basin-hooks/chains'
 import { config } from './config'
 
 const feeHistory = await getFeeHistory(config, {
@@ -137,7 +137,7 @@ const feeHistory = await getFeeHistory(config, {
 ## Return Type
 
 ```ts
-import { type GetFeeHistoryReturnType } from '@wagmi/core'
+import { type GetFeeHistoryReturnType } from 'basin-hooks'
 ```
 
 [`FeeHistory`](https://viem.sh/docs/glossary/types.html#feehistory)
@@ -147,7 +147,7 @@ The fee history.
 ## Error
 
 ```ts
-import { type GetFeeHistoryErrorType } from '@wagmi/core'
+import { type GetFeeHistoryErrorType } from 'basin-hooks'
 ```
 
 <!--@include: @shared/query-imports.md-->

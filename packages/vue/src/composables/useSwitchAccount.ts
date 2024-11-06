@@ -4,15 +4,15 @@ import type {
   Connector,
   ResolvedRegister,
   SwitchAccountErrorType,
-} from '@wagmi/core'
-import type { Compute } from '@wagmi/core/internal'
+} from 'basin-hooks'
+import type { Compute } from 'basin-hooks/internal'
 import {
   type SwitchAccountData,
   type SwitchAccountMutate,
   type SwitchAccountMutateAsync,
   type SwitchAccountVariables,
   switchAccountMutationOptions,
-} from '@wagmi/core/query'
+} from 'basin-hooks/query'
 import { type Ref, computed } from 'vue'
 
 import type { ConfigParameter } from '../types/properties.js'

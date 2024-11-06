@@ -5,15 +5,15 @@ import type {
   Config,
   DeployContractErrorType,
   ResolvedRegister,
-} from '@wagmi/core'
-import type { Compute } from '@wagmi/core/internal'
+} from 'basin-hooks'
+import type { Compute } from 'basin-hooks/internal'
 import {
   type DeployContractData,
   type DeployContractMutate,
   type DeployContractMutateAsync,
   type DeployContractVariables,
   deployContractMutationOptions,
-} from '@wagmi/core/query'
+} from 'basin-hooks/query'
 import type { Abi } from 'viem'
 
 import type { ConfigParameter } from '../types/properties.js'

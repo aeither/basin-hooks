@@ -1,11 +1,11 @@
-# @wagmi/core
+# basin-hooks
 
 VanillaJS library for Ethereum
 
 ## Installation
 
 ```bash
-pnpm add @wagmi/core viem
+pnpm add basin-hooks viem
 ```
 
 ## Documentation

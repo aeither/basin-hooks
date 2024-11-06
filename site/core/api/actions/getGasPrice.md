@@ -1,5 +1,5 @@
 <script setup>
-const packageName = '@wagmi/core'
+const packageName = 'basin-hooks'
 const actionName = 'getGasPrice'
 const typeName = 'GetGasPrice'
 </script>
@@ -11,14 +11,14 @@ Action for fetching the current price of gas (in wei).
 ## Import
 
 ```ts
-import { getGasPrice } from '@wagmi/core'
+import { getGasPrice } from 'basin-hooks'
 ```
 
 ## Usage
 
 ::: code-group
 ```ts [index.ts]
-import { getGasPrice } from '@wagmi/core'
+import { getGasPrice } from 'basin-hooks'
 import { config } from './config'
 
 const gasPrice = await getGasPrice(config)
@@ -29,7 +29,7 @@ const gasPrice = await getGasPrice(config)
 ## Parameters
 
 ```ts
-import { type GetGasPriceParameters } from '@wagmi/core'
+import { type GetGasPriceParameters } from 'basin-hooks'
 ```
 
 ### chainId
@@ -40,8 +40,8 @@ ID of chain to use when fetching data.
 
 ::: code-group
 ```ts [index.ts]
-import { getGasPrice } from '@wagmi/core'
-import { mainnet } from '@wagmi/core/chains'
+import { getGasPrice } from 'basin-hooks'
+import { mainnet } from 'basin-hooks/chains'
 import { config } from './config'
 
 const gasPrice = await getGasPrice(config, {
@@ -54,7 +54,7 @@ const gasPrice = await getGasPrice(config, {
 ## Return Type
 
 ```ts
-import { type GetGasPriceReturnType } from '@wagmi/core'
+import { type GetGasPriceReturnType } from 'basin-hooks'
 ```
 
 `bigint`
@@ -64,7 +64,7 @@ Current price of gas (in wei).
 ## Error
 
 ```ts
-import { type GetGasPriceErrorType } from '@wagmi/core'
+import { type GetGasPriceErrorType } from 'basin-hooks'
 ```
 
 <!--@include: @shared/query-imports.md-->

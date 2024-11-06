@@ -1,5 +1,5 @@
 <script setup>
-const packageName = '@wagmi/core'
+const packageName = 'basin-hooks'
 const actionName = 'getBlock'
 const typeName = 'GetBlock'
 </script>
@@ -11,14 +11,14 @@ Action for fetching information about a block at a block number, hash or tag.
 ## Import
 
 ```ts
-import { getBlock } from '@wagmi/core'
+import { getBlock } from 'basin-hooks'
 ```
 
 ## Usage
 
 ::: code-group
 ```ts [index.ts]
-import { getBlock } from '@wagmi/core'
+import { getBlock } from 'basin-hooks'
 import { config } from './config'
 
 const blockNumber = await getBlock(config)
@@ -29,7 +29,7 @@ const blockNumber = await getBlock(config)
 ## Parameters
 
 ```ts
-import { type GetBlockParameters } from '@wagmi/core'
+import { type GetBlockParameters } from 'basin-hooks'
 ```
 
 ### blockHash
@@ -40,7 +40,7 @@ Information at a given block hash.
 
 ::: code-group
 ```ts [index.ts]
-import { getBlock } from '@wagmi/core'
+import { getBlock } from 'basin-hooks'
 import { config } from './config'
 
 const blockNumber = await getBlock(config, {
@@ -58,7 +58,7 @@ Information at a given block number.
 
 ::: code-group
 ```ts [index.ts]
-import { getBlock } from '@wagmi/core'
+import { getBlock } from 'basin-hooks'
 import { config } from './config'
 
 const blockNumber = await getBlock(config, {
@@ -76,7 +76,7 @@ Information at a given block tag. Defaults to `'latest'`.
 
 ::: code-group
 ```ts [index.ts]
-import { getBlock } from '@wagmi/core'
+import { getBlock } from 'basin-hooks'
 import { config } from './config'
 
 const blockNumber = await getBlock(config, {
@@ -94,8 +94,8 @@ ID of chain to use when fetching data.
 
 ::: code-group
 ```ts [index.ts]
-import { getBlock } from '@wagmi/core'
-import { mainnet } from '@wagmi/core/chains'
+import { getBlock } from 'basin-hooks'
+import { mainnet } from 'basin-hooks/chains'
 import { config } from './config'
 
 const blockNumber = await getBlock(config, {
@@ -113,7 +113,7 @@ Whether or not to include transactions as objects.
 
 ::: code-group
 ```ts [index.ts]
-import { getBlock } from '@wagmi/core'
+import { getBlock } from 'basin-hooks'
 import { config } from './config'
 
 const blockNumber = await getBlock(config, {
@@ -126,7 +126,7 @@ const blockNumber = await getBlock(config, {
 ## Return Type
 
 ```ts
-import { type GetBlockReturnType } from '@wagmi/core'
+import { type GetBlockReturnType } from 'basin-hooks'
 ```
 
 [`Block`](https://viem.sh/docs/glossary/types.html#block)
@@ -136,7 +136,7 @@ Information about the block.
 ## Error
 
 ```ts
-import { type GetBlockErrorType } from '@wagmi/core'
+import { type GetBlockErrorType } from 'basin-hooks'
 ```
 
 <!--@include: @shared/query-imports.md-->

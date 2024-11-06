@@ -1,4 +1,4 @@
-import { BaseError as CoreError } from '@wagmi/core'
+import { BaseError as CoreError } from 'basin-hooks'
 
 import { getVersion } from '../utils/getVersion.js'
 

@@ -99,8 +99,8 @@ function getTsConfig(baseUrl: string) {
         '@wagmi/connectors/*': [
           path.relative(baseUrl, 'packages/connectors/src/*'),
         ],
-        '@wagmi/core': [path.relative(baseUrl, 'packages/core/src')],
-        '@wagmi/core/*': [path.relative(baseUrl, 'packages/core/src/*')],
+        'basin-hooks': [path.relative(baseUrl, 'packages/core/src')],
+        'basin-hooks/*': [path.relative(baseUrl, 'packages/core/src/*')],
         wagmi: [path.relative(baseUrl, 'packages/react/src')],
         'wagmi/*': [path.relative(baseUrl, 'packages/react/src/*')],
       },

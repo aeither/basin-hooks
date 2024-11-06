@@ -58,7 +58,7 @@ Gateway urls to resolve IPFS and/or Arweave assets.
 ::: code-group
 ```vue [index.vue]
 <script setup lang="ts">
-import { getEnsAvatar } from '@wagmi/core'
+import { getEnsAvatar } from 'basin-hooks'
 import { normalize } from 'viem/ens'
 import { config } from './config'
 

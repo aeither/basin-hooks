@@ -59,6 +59,6 @@ test('behavior: not connected', async () => {
   await expect(getCapabilities(config)).rejects.toMatchInlineSnapshot(`
     [ConnectorNotConnectedError: Connector not connected.
 
-    Version: @wagmi/core@x.y.z]
+    Version: basin-hooks@x.y.z]
   `)
 })

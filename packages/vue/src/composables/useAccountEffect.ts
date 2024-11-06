@@ -1,5 +1,5 @@
-import { type GetAccountReturnType, watchAccount } from '@wagmi/core'
-import type { Compute } from '@wagmi/core/internal'
+import { type GetAccountReturnType, watchAccount } from 'basin-hooks'
+import type { Compute } from 'basin-hooks/internal'
 import { watchEffect } from 'vue'
 
 import type { ConfigParameter } from '../types/properties.js'

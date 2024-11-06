@@ -16,8 +16,8 @@ import type {
   ExactPartial,
   Omit,
   UnionStrictOmit,
-} from '@wagmi/core/internal'
-import { hashFn } from '@wagmi/core/query'
+} from 'basin-hooks/internal'
+import { hashFn } from 'basin-hooks/query'
 
 export type UseMutationParameters<
   data = unknown,

@@ -2,15 +2,15 @@ import type {
   Config,
   GetEnsAvatarErrorType,
   ResolvedRegister,
-} from '@wagmi/core'
-import type { Compute } from '@wagmi/core/internal'
+} from 'basin-hooks'
+import type { Compute } from 'basin-hooks/internal'
 import {
   type GetEnsAvatarData,
   type GetEnsAvatarOptions,
   type GetEnsAvatarQueryFnData,
   type GetEnsAvatarQueryKey,
   getEnsAvatarQueryOptions,
-} from '@wagmi/core/query'
+} from 'basin-hooks/query'
 import { computed } from 'vue'
 
 import type { ConfigParameter, QueryParameter } from '../types/properties.js'

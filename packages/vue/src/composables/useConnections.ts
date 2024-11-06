@@ -2,7 +2,7 @@ import {
   type GetConnectionsReturnType,
   getConnections,
   watchConnections,
-} from '@wagmi/core'
+} from 'basin-hooks'
 import { type Ref, onScopeDispose, readonly, ref } from 'vue'
 
 import type { ConfigParameter } from '../types/properties.js'

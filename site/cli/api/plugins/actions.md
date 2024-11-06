@@ -52,10 +52,10 @@ export default defineConfig({
 
 ### overridePackageName
 
-`'@wagmi/core' | 'wagmi'`
+`'basin-hooks' | 'wagmi'`
 
 - Override detected import source.
-- Defaults to `'wagmi'` or `'@wagmi/core'` depending on which package is installed.
+- Defaults to `'wagmi'` or `'basin-hooks'` depending on which package is installed.
 
 ```ts
 import { defineConfig } from '@wagmi/cli'

@@ -1,5 +1,5 @@
-import type { WatchAssetErrorType } from '@wagmi/core'
-import type { WatchAssetVariables } from '@wagmi/core/query'
+import type { WatchAssetErrorType } from 'basin-hooks'
+import type { WatchAssetVariables } from 'basin-hooks/query'
 import { expectTypeOf, test } from 'vitest'
 
 import { useWatchAsset } from './useWatchAsset.js'

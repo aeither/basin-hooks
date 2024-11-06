@@ -4,15 +4,15 @@ import type {
   ConnectErrorType,
   GetConnectorsReturnType,
   ResolvedRegister,
-} from '@wagmi/core'
-import type { Compute } from '@wagmi/core/internal'
+} from 'basin-hooks'
+import type { Compute } from 'basin-hooks/internal'
 import {
   type ConnectData,
   type ConnectMutate,
   type ConnectMutateAsync,
   type ConnectVariables,
   connectMutationOptions,
-} from '@wagmi/core/query'
+} from 'basin-hooks/query'
 import { onScopeDispose } from 'vue'
 
 import type { ConfigParameter } from '../types/properties.js'

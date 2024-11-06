@@ -1,6 +1,6 @@
-import { connect, disconnect } from '@wagmi/core'
 import { abi, address, config } from '@wagmi/test'
 import { renderHook, waitFor } from '@wagmi/test/react'
+import { connect, disconnect } from 'basin-hooks'
 import { expect, test } from 'vitest'
 
 import { useWriteContract } from './useWriteContract.js'

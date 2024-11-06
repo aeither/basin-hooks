@@ -1,5 +1,5 @@
 <script setup>
-const packageName = '@wagmi/core'
+const packageName = 'basin-hooks'
 const actionName = 'switchAccount'
 const typeName = 'SwitchAccount'
 </script>
@@ -11,14 +11,14 @@ Action for switching the current account.
 ## Import
 
 ```ts
-import { switchAccount } from '@wagmi/core'
+import { switchAccount } from 'basin-hooks'
 ```
 
 ## Usage
 
 ::: code-group
 ```ts [index.ts]
-import { getConnections, switchAccount } from '@wagmi/core'
+import { getConnections, switchAccount } from 'basin-hooks'
 import { config } from './config'
 
 const connections = getConnections(config)
@@ -32,7 +32,7 @@ const result = await switchAccount(config, {
 ## Parameters
 
 ```ts
-import { type SwitchAccountParameters } from '@wagmi/core'
+import { type SwitchAccountParameters } from 'basin-hooks'
 ```
 
 ### connector
@@ -43,7 +43,7 @@ import { type SwitchAccountParameters } from '@wagmi/core'
 
 ::: code-group
 ```ts [index.ts]
-import { getConnections, switchAccount } from '@wagmi/core'
+import { getConnections, switchAccount } from 'basin-hooks'
 import { config } from './config'
 
 const connections = getConnections(config)
@@ -57,7 +57,7 @@ const result = await switchAccount(config, {
 ## Return Type
 
 ```ts
-import { type SwitchAccountReturnType } from '@wagmi/core'
+import { type SwitchAccountReturnType } from 'basin-hooks'
 ```
 
 ### accounts
@@ -75,7 +75,7 @@ Connected chain ID from connector.
 ## Error
 
 ```ts
-import { type SwitchAccountErrorType } from '@wagmi/core'
+import { type SwitchAccountErrorType } from 'basin-hooks'
 ```
 
 <!--@include: @shared/mutation-imports.md-->

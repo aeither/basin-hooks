@@ -1,6 +1,6 @@
-import { connect, disconnect } from '@wagmi/core'
 import { chain, config } from '@wagmi/test'
 import { renderHook, waitFor } from '@wagmi/test/react'
+import { connect, disconnect } from 'basin-hooks'
 import { expect, test } from 'vitest'
 
 import { useAccount } from './useAccount.js'

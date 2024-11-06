@@ -1,5 +1,5 @@
 <script setup>
-const packageName = '@wagmi/core'
+const packageName = 'basin-hooks'
 const actionName = 'estimateFeesPerGas'
 const typeName = 'EstimateFeesPerGas'
 </script>
@@ -11,14 +11,14 @@ Returns an estimate for the fees per gas (in wei) for a transaction to be likely
 ## Import
 
 ```ts
-import { estimateFeesPerGas } from '@wagmi/core'
+import { estimateFeesPerGas } from 'basin-hooks'
 ```
 
 ## Usage
 
 ::: code-group
 ```ts [index.ts]
-import { estimateFeesPerGas } from '@wagmi/core'
+import { estimateFeesPerGas } from 'basin-hooks'
 import { config } from './config'
 
 const result = await estimateFeesPerGas(config)
@@ -29,7 +29,7 @@ const result = await estimateFeesPerGas(config)
 ## Parameters
 
 ```ts
-import { type EstimateFeesPerGasParameters } from '@wagmi/core'
+import { type EstimateFeesPerGasParameters } from 'basin-hooks'
 ```
 
 ### chainId
@@ -40,8 +40,8 @@ ID of chain to use when fetching data.
 
 ::: code-group
 ```ts [index.ts]
-import { estimateFeesPerGas } from '@wagmi/core'
-import { mainnet } from '@wagmi/core/chains'
+import { estimateFeesPerGas } from 'basin-hooks'
+import { mainnet } from 'basin-hooks/chains'
 import { config } from './config'
 
 const result = await estimateFeesPerGas(config, {
@@ -60,7 +60,7 @@ const result = await estimateFeesPerGas(config, {
 
 ::: code-group
 ```ts [index.ts]
-import { estimateFeesPerGas } from '@wagmi/core'
+import { estimateFeesPerGas } from 'basin-hooks'
 import { config } from './config'
 
 const feesPerGas = estimateFeesPerGas(config, {
@@ -79,7 +79,7 @@ const feesPerGas = estimateFeesPerGas(config, {
 
 ::: code-group
 ```ts [index.ts]
-import { estimateFeesPerGas } from '@wagmi/core'
+import { estimateFeesPerGas } from 'basin-hooks'
 import { config } from './config'
 
 const result = estimateFeesPerGas(config, {
@@ -92,7 +92,7 @@ const result = estimateFeesPerGas(config, {
 ## Return Type
 
 ```ts
-import { type EstimateFeesPerGasReturnType } from '@wagmi/core'
+import { type EstimateFeesPerGasReturnType } from 'basin-hooks'
 ```
 
 [`FeeValues`](https://viem.sh/docs/glossary/types.html#feevalues)
@@ -129,7 +129,7 @@ Object of formatted values using [`formatUnits`](#formatunits).
 ## Error
 
 ```ts
-import { type EstimateFeesPerGasErrorType } from '@wagmi/core'
+import { type EstimateFeesPerGasErrorType } from 'basin-hooks'
 ```
 
 <!--@include: @shared/query-imports.md-->

@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@wagmi/connectors": "latest",
-    "@wagmi/core": "latest",
+    "basin-hooks": "latest",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "viem": "latest"

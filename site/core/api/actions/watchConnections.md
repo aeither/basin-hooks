@@ -5,14 +5,14 @@ Subscribe to connections changes.
 ## Import
 
 ```ts
-import { watchConnections } from '@wagmi/core'
+import { watchConnections } from 'basin-hooks'
 ```
 
 ## Usage
 
 ::: code-group
 ```ts [index.ts]
-import { watchConnections } from '@wagmi/core'
+import { watchConnections } from 'basin-hooks'
 import { config } from './config'
 
 const unwatch = watchConnections(config, {
@@ -28,7 +28,7 @@ unwatch()
 ## Parameters
 
 ```ts
-import { type WatchConnectionsParameters } from '@wagmi/core'
+import { type WatchConnectionsParameters } from 'basin-hooks'
 ```
 
 ### onChange
@@ -39,7 +39,7 @@ Callback function called when connections changes.
 
 ::: code-group
 ```ts [index.ts]
-import { watchConnections } from '@wagmi/core'
+import { watchConnections } from 'basin-hooks'
 import { config } from './config'
 
 const unwatch = watchConnections(config, {
@@ -55,7 +55,7 @@ unwatch()
 ## Return Type
 
 ```ts
-import { type WatchConnectionsReturnType } from '@wagmi/core'
+import { type WatchConnectionsReturnType } from 'basin-hooks'
 ```
 
 Function for cleaning up watcher.

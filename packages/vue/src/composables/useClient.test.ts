@@ -1,6 +1,6 @@
-import { switchChain } from '@wagmi/core'
 import { config } from '@wagmi/test'
 import { renderComposable, waitFor } from '@wagmi/test/vue'
+import { switchChain } from 'basin-hooks'
 import { expect, test } from 'vitest'
 import { ref } from 'vue'
 

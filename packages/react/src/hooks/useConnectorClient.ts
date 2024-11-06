@@ -5,15 +5,15 @@ import type {
   Config,
   GetConnectorClientErrorType,
   ResolvedRegister,
-} from '@wagmi/core'
-import type { Compute, Omit } from '@wagmi/core/internal'
+} from 'basin-hooks'
+import type { Compute, Omit } from 'basin-hooks/internal'
 import {
   type GetConnectorClientData,
   type GetConnectorClientOptions,
   type GetConnectorClientQueryFnData,
   type GetConnectorClientQueryKey,
   getConnectorClientQueryOptions,
-} from '@wagmi/core/query'
+} from 'basin-hooks/query'
 import { useEffect, useRef } from 'react'
 
 import type { ConfigParameter } from '../types/properties.js'

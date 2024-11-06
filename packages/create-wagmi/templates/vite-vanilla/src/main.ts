@@ -1,5 +1,5 @@
+import { connect, disconnect, reconnect, watchAccount } from 'basin-hooks'
 import { Buffer } from 'buffer'
-import { connect, disconnect, reconnect, watchAccount } from '@wagmi/core'
 
 import './style.css'
 import { config } from './wagmi'

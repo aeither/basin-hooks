@@ -1,15 +1,15 @@
 'use client'
 
 import { useMutation } from '@tanstack/react-query'
-import type { WatchAssetErrorType } from '@wagmi/core'
-import type { Compute } from '@wagmi/core/internal'
+import type { WatchAssetErrorType } from 'basin-hooks'
+import type { Compute } from 'basin-hooks/internal'
 import {
   type WatchAssetData,
   type WatchAssetMutate,
   type WatchAssetMutateAsync,
   type WatchAssetVariables,
   watchAssetMutationOptions,
-} from '@wagmi/core/query'
+} from 'basin-hooks/query'
 
 import type { ConfigParameter } from '../types/properties.js'
 import type {

@@ -1,4 +1,3 @@
-import { connect, disconnect, sendTransaction } from '@wagmi/core'
 import {
   accounts,
   config,
@@ -7,6 +6,7 @@ import {
   wait,
 } from '@wagmi/test'
 import { renderHook } from '@wagmi/test/react'
+import { connect, disconnect, sendTransaction } from 'basin-hooks'
 import { parseEther } from 'viem'
 import type { OnTransactionsParameter } from 'viem/actions'
 import { expect, test } from 'vitest'

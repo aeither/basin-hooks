@@ -4,14 +4,14 @@ import type {
   Config,
   ResolvedRegister,
   SimulateContractErrorType,
-} from '@wagmi/core'
+} from 'basin-hooks'
 import {
   type SimulateContractData,
   type SimulateContractOptions,
   type SimulateContractQueryFnData,
   type SimulateContractQueryKey,
   simulateContractQueryOptions,
-} from '@wagmi/core/query'
+} from 'basin-hooks/query'
 import type { Abi, ContractFunctionArgs, ContractFunctionName } from 'viem'
 
 import type { ConfigParameter, QueryParameter } from '../types/properties.js'

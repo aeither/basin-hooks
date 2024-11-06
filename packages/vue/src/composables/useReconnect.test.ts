@@ -1,7 +1,7 @@
 import { mock } from '@wagmi/connectors'
-import { connect, disconnect } from '@wagmi/core'
 import { accounts, config } from '@wagmi/test'
 import { renderComposable, waitFor } from '@wagmi/test/vue'
+import { connect, disconnect } from 'basin-hooks'
 import { afterEach, expect, test } from 'vitest'
 
 import { useReconnect } from './useReconnect.js'

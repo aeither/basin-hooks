@@ -1,4 +1,4 @@
-import type { Connector } from '@wagmi/core'
+import type { Connector } from 'basin-hooks'
 import type { Address, Chain } from 'viem'
 import { expectTypeOf, test } from 'vitest'
 
