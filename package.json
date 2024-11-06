@@ -1,6 +1,9 @@
 {
   "private": true,
   "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "pnpm run --r --filter \"./packages/**\" build",
     "changeset:prepublish": "pnpm version:update && pnpm build && bun scripts/formatPackageJson.ts && bun scripts/generateProxyPackages.ts",

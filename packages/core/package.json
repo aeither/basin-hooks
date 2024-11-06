@@ -1,5 +1,5 @@
 {
-  "name": "@wagmi/core",
+  "name": "basin-hooks",
   "description": "VanillaJS library for Ethereum",
   "version": "2.14.2",
   "license": "MIT",
