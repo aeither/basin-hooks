@@ -1,5 +1,11 @@
 # basin-hooks
 
+## 3.0.0
+
+### Major Changes
+
+- new version
+
 ## 2.14.2
 
 ### Patch Changes
@@ -2429,7 +2435,7 @@
       addressOrName: "0xecb504d39723b0be0e3a9aa33d646642d1051ee1",
       contractInterface: wagmigotchiABI,
     },
-    "feed",
+    "feed"
   );
   ```
 
@@ -2456,7 +2462,7 @@
       contractInterface: wagmigotchiABI,
     },
     "getHunger",
-    { args: [0] },
+    { args: [0] }
   );
 
   watchReadContract(
@@ -2466,7 +2472,7 @@
     },
     "getHunger",
     { args: [0] },
-    (result) => {},
+    (result) => {}
   );
   ```
 
@@ -2487,7 +2493,7 @@
       functionName: "getHunger",
       args: [0],
     },
-    (result) => {},
+    (result) => {}
   );
   ```
 
@@ -2765,7 +2771,7 @@
 
   const { chains, provider, webSocketProvider } = configureChains(
     defaultChains,
-    [alchemyProvider({ alchemyId }), publicProvider()],
+    [alchemyProvider({ alchemyId }), publicProvider()]
   );
 
   const client = createClient({

@@ -1,5 +1,13 @@
 # @wagmi/vue
 
+## 0.0.58
+
+### Patch Changes
+
+- Updated dependencies []:
+  - basin-hooks@3.0.0
+  - @wagmi/connectors@6.0.0
+
 ## 0.0.57
 
 ### Patch Changes

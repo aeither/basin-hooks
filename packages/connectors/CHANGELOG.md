@@ -1,5 +1,12 @@
 # @wagmi/connectors
 
+## 6.0.0
+
+### Patch Changes
+
+- Updated dependencies []:
+  - basin-hooks@3.0.0
+
 ## 5.3.4
 
 ### Patch Changes

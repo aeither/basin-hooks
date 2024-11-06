@@ -1,5 +1,13 @@
 # wagmi
 
+## 2.12.27
+
+### Patch Changes
+
+- Updated dependencies []:
+  - basin-hooks@3.0.0
+  - @wagmi/connectors@6.0.0
+
 ## 2.12.26
 
 ### Patch Changes
@@ -3221,7 +3229,7 @@
       addressOrName: mlootContractAddress,
       contractInterface: mlootABI,
     },
-    "claim",
+    "claim"
   );
   ```
 
@@ -3720,7 +3728,7 @@
       contractInterface: wagmigotchiABI,
     },
     "love",
-    { args: "0x27a69ffba1e939ddcfecc8c7e0f967b872bac65c" },
+    { args: "0x27a69ffba1e939ddcfecc8c7e0f967b872bac65c" }
   );
   ```
 
@@ -3973,7 +3981,7 @@
 
   const { chains, provider, webSocketProvider } = configureChains(
     defaultChains,
-    [alchemyProvider({ alchemyId }), publicProvider()],
+    [alchemyProvider({ alchemyId }), publicProvider()]
   );
 
   const client = createClient({
