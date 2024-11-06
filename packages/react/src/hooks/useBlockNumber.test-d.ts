@@ -1,4 +1,4 @@
-import { createConfig, http, webSocket } from 'basin-hooks'
+import { http, createConfig, webSocket } from 'basin-hooks'
 import { mainnet, optimism } from 'basin-hooks/chains'
 import { expectTypeOf, test } from 'vitest'
 

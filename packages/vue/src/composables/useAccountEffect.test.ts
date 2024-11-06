@@ -2,7 +2,7 @@ import { VueQueryPlugin } from '@tanstack/vue-query'
 import { mock } from '@wagmi/connectors'
 import { accounts, chain } from '@wagmi/test'
 import { renderComposable, waitFor } from '@wagmi/test/vue'
-import { connect, createConfig, disconnect, http } from 'basin-hooks'
+import { http, connect, createConfig, disconnect } from 'basin-hooks'
 import { expect, test, vi } from 'vitest'
 import type { App } from 'vue'
 

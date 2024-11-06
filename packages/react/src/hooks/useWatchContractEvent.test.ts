@@ -9,7 +9,7 @@ import {
 } from '@wagmi/test'
 import { renderHook } from '@wagmi/test/react'
 import { connect, disconnect, getBalance, writeContract } from 'basin-hooks'
-import { createWalletClient, http, parseEther } from 'viem'
+import { http, createWalletClient, parseEther } from 'viem'
 import type { WatchEventOnLogsParameter } from 'viem/actions'
 import { expect, test } from 'vitest'
 

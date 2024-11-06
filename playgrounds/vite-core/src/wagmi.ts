@@ -1,5 +1,5 @@
 import { coinbaseWallet, metaMask, walletConnect } from '@wagmi/connectors'
-import { createConfig, createStorage, http } from 'basin-hooks'
+import { http, createConfig, createStorage } from 'basin-hooks'
 import { mainnet, optimism, sepolia } from 'basin-hooks/chains'
 
 export const config = createConfig({

@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "lib": [
-      "DOM",
-      "DOM.Iterable",
-      "ESNext"
-    ],
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "module": "ESNext",
     "skipLibCheck": true,
     "moduleResolution": "bundler",
@@ -19,26 +15,14 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "paths": {
-      "@wagmi/connectors": [
-        "../../packages/connectors/src/exports"
-      ],
-      "basin-hooks": [
-        "../../packages/core/src/exports"
-      ],
-      "basin-hooks/*": [
-        "../../packages/core/src/exports/*"
-      ],
-      "wagmi": [
-        "../../packages/react/src/exports"
-      ],
-      "wagmi/*": [
-        "../../packages/react/src/exports/*"
-      ]
+      "@wagmi/connectors": ["../../packages/connectors/src/exports"],
+      "basin-hooks": ["../../packages/core/src/exports"],
+      "basin-hooks/*": ["../../packages/core/src/exports/*"],
+      "wagmi": ["../../packages/react/src/exports"],
+      "wagmi/*": ["../../packages/react/src/exports/*"]
     }
   },
-  "include": [
-    "src"
-  ],
+  "include": ["src"],
   "references": [
     {
       "path": "./tsconfig.node.json"
